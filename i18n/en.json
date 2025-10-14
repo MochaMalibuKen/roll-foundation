@@ -1,32 +1,87 @@
 {
-  "nav": { "home": "Home", "events": "Events", "donate": "Donate", "lang": "EN", "lang_alt": "ES" },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "events": "Events",
+    "donate": "Donate",
+    "lang": "EN",
+    "lang_alt": "ES"
+  },
   "home": {
-    "hero_h1": "Serving kids and community with heart.",
-    "hero_lead": "Founded by the Allen family, Roll Foundation supports youth through programs and events hosted at the Lily Event Center.",
+    "hero_h1": "Restoring Opportunity. Lifting Lives. Leveling the Field.",
+    "hero_lead": "The ROLL Foundation empowers underserved communities through mentorship, resources, and dignity — creating pathways to lasting success.",
     "cta_donate": "Donate",
     "cta_events": "Upcoming Events",
-    "f1": "Mentorship",
-    "f1_copy": "Guidance, skills, and encouragement to help local youth roll forward.",
-    "f2": "Community",
-    "f2_copy": "Events and programs at the Lily Event Center, 640 Old Airport Rd.",
-    "f3": "Support",
-    "f3_copy": "From backpacks to workshops—we meet real needs with real action."
+    "f1": "Restore Opportunity",
+    "f1_copy": "Access to mentorship, tools, and resources that open doors — no matter your starting point.",
+    "f2": "Lift Lives",
+    "f2_copy": "Programs and events that provide practical support and community at the Lily Event Center.",
+    "f3": "Level the Field",
+    "f3_copy": "Breaking down barriers so people can rebuild with dignity and a fair shot at success."
+  },
+  "about": {
+    "h1": "About the ROLL Foundation",
+    "intro_p1": "The ROLL Foundation is dedicated to restoring opportunity, lifting lives, and leveling the field for disenfranchised and underserved communities. We believe every individual deserves another chance to thrive.",
+    "intro_p2": "Founded by the Allen family, we partner with the Lily Event Center to host programs, gatherings, and resources that move people from surviving to succeeding.",
+    "mission_h": "Our Mission",
+    "mission_p1": "By providing access to resources, mentorship, and supportive programs, we empower people to rebuild their lives, unlock their potential, and contribute meaningfully to society.",
+    "mission_p2": "Our mission is to break down systemic barriers, restore dignity, and create pathways to lasting success for those too often overlooked.",
+    "pillars_h": "Our Pillars",
+    "p_restore_h": "Restore Opportunity",
+    "p_restore_p": "We connect people with mentors, training, and tools that open real pathways to work, education, and stability.",
+    "p_lift_h": "Lift Lives",
+    "p_lift_p": "Through events and practical support, we meet immediate needs while building long-term community.",
+    "p_level_h": "Level the Field",
+    "p_level_p": "We advocate for fair access and reduce barriers so second chances become new beginnings.",
+    "contact_h": "Get Involved",
+    "contact_p": "Ready to partner, volunteer, or learn more? We’d love to hear from you.",
+    "contact_email_label": "Email Us"
   },
   "events": {
-    "h1": "Upcoming Events",
-    "lead": "Programs and gatherings at the Lily Event Center.",
-    "c1": "Poster photo",
-    "c2": "Event flyer",
-    "c3": "Signage",
-    "c4": "Community table"
+    "h1": "Community Events",
+    "lead": "Gatherings and programs hosted at the Lily Event Center, Aiken SC.",
+    "e1_title": "Back-to-School Drive",
+    "e1_when": "Date TBA",
+    "e1_where": "Lily Event Center",
+    "e1_summary": "Join us to pack backpacks with supplies for local students. Volunteers welcome!",
+    "e2_title": "Holiday Care Kits",
+    "e2_when": "Date TBA",
+    "e2_where": "Lily Event Center",
+    "e2_summary": "Help assemble care kits for families in need.",
+    "cta_sponsor": "Sponsor an Event",
+    "cta_contact": "Contact Us for Event Info"
   },
   "donate": {
     "h1": "Donate",
     "lead": "Every gift helps us serve more kids, more often.",
     "btn": "Donate with PayPal",
-    "qbo": "Prefer QuickBooks Online? We can add a QBO payment link here too."
+    "qbo": "Prefer QuickBooks Online? Add a QBO payment link here too.",
+    "impact_h": "Your Impact",
+    "impact_p1": "Your support funds mentorship programs, community outreach, and events that create lasting change.",
+    "impact_p2": "Together, we restore opportunity, lift lives, and level the field for those ready for another chance."
+  },
+  "contact": {
+    "h1": "Contact Us",
+    "lead": "We’d love to hear from you. Whether you want to volunteer, partner, or learn more — reach out today.",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "address_label": "Address",
+    "submit_btn": "Send Message",
+    "success_msg": "Thank you! We’ll be in touch soon."
   },
   "footer": {
     "line": "© {{year}} Roll Foundation • A project of Citizen’s Park Office & Conference Center"
   }
+  ,
+  "shesroll": {
+  "title": "She’s On A Roll",
+  "hero_lead": "An uplifting celebration of women, community, and empowerment — presented by the ROLL Foundation at the Lily Event Center.",
+  "sponsors_h2": "Calling All Sponsors",
+  "sponsors_p1": "Join us in supporting “She’s On A Roll” — a unique event designed to inspire, empower, and connect women in our community. Sponsorships directly fund mentorship programs, workshops, and local outreach through the ROLL Foundation.",
+  "sponsors_p2": "Want to learn more? Download our sponsorship packet below and reach out to our event coordinator.",
+  "cta_packet": "View Sponsorship Packet",
+  "cta_email": "Email the Event Coordinator",
+  "banner_h3": "Hosted at the Lily Event Center",
+  "banner_p": "640 Old Airport Road • Aiken, South Carolina"
+}
 }

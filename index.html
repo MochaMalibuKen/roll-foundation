@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Roll Foundation — Serving kids and community with heart.</title>
-  <meta name="description" content="Founded by the Allen family, Roll Foundation supports youth through programs and events hosted at the Lily Event Center.">
+  <title>Roll Foundation — Restoring Opportunity. Lifting Lives. Leveling the Field.</title>
+  <meta name="description" content="The ROLL Foundation empowers underserved communities through mentorship, resources, and dignity — creating pathways to lasting success.">
 
   <!-- Favicon / Logo -->
   <link rel="icon" href="./assets/img/logo/rolllogo2.png" type="image/png">
@@ -13,7 +13,7 @@
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Roll Foundation">
-  <meta property="og:description" content="Serving kids and community with heart.">
+  <meta property="og:description" content="Restoring Opportunity. Lifting Lives. Leveling the Field.">
   <meta property="og:image" content="./assets/img/events/rollevent5.jpg">
 
   <!-- Fonts & CSS -->
@@ -23,32 +23,38 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ===== Header (shared) ===== -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Roll Foundation">
-        <img src="./assets/img/logo/rolllogo2.png" alt="Roll Foundation" />
-      </a>
-
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
-      <nav id="site-nav" class="site-nav" data-collapsible>
-        <a href="index.html" data-i18n="nav.home" aria-current="page">Home</a>
-        <a href="events.html" data-i18n="nav.events">Events</a>
-        <a href="donate.html" data-i18n="nav.donate">Donate</a>
-        <button id="langToggle" class="btn small" aria-label="Toggle language">
-          <span data-i18n="nav.lang">EN</span>
-          <span class="visually-hidden" data-i18n="nav.lang_alt">ES</span>
-        </button>
-      </nav>
+  <!-- ===== Header (logo left • title center • nav right) ===== -->
+ <header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="./assets/img/logo/rolllogo2.png" alt="Roll Foundation Logo">
     </div>
-  </header>
+    <h1 class="site-title">Roll Foundation</h1>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
+    <nav id="site-nav" class="site-nav" data-collapsible>
+      <a href="index.html" data-i18n="nav.home" aria-current="page">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="events.html" data-i18n="nav.events">Events</a>
+      <a href="donate.html" data-i18n="nav.donate">Donate</a>
+      <a href="contact.html" data-i18n="contact.h1">Contact</a>
+      <button id="langToggle" class="btn small" aria-label="Toggle language">
+        <span data-i18n="nav.lang">EN</span>
+        <span class="visually-hidden" data-i18n="nav.lang_alt">ES</span>
+      </button>
+    </nav>
+  </div>
+</header>
 
   <main id="main">
-    <!-- Washed-out hero using rollevent5.jpg directly (no CSS var confusion) -->
+    <!-- ===== Hero (lighter wash, joyful vibe) ===== -->
     <section class="hero hard-hero" style="background-image:url('./assets/img/events/rollevent5.jpg')">
       <div class="container hero-inner">
-        <h1 data-i18n="home.hero_h1">Serving kids and community with heart.</h1>
-        <p class="lead" data-i18n="home.hero_lead">Founded by the Allen family, Roll Foundation supports youth through programs and events hosted at the Lily Event Center.</p>
+        <h2 class="visually-hidden">Welcome</h2>
+        <h1 data-i18n="home.hero_h1">Restoring Opportunity. Lifting Lives. Leveling the Field.</h1>
+        <p class="lead" data-i18n="home.hero_lead">
+          The ROLL Foundation empowers underserved communities through mentorship, resources, and dignity — creating pathways to lasting success.
+        </p>
         <div class="cta-row">
           <a class="btn primary" data-i18n="home.cta_donate" href="donate.html">Donate</a>
           <a class="btn" data-i18n="home.cta_events" href="events.html">Upcoming Events</a>
@@ -56,38 +62,55 @@
       </div>
     </section>
 
-    <!-- Feature cards -->
+    <!-- ===== Mission (full statement) ===== -->
+    <section class="section mission">
+      <div class="container narrow">
+        <h2>Our Mission</h2>
+        <p>
+          The ROLL Foundation is dedicated to restoring opportunity, lifting lives, and leveling the field for disenfranchised and underserved communities.
+          We believe every individual deserves another chance to thrive.
+        </p>
+        <p>
+          By providing access to resources, mentorship, and supportive programs, we empower people to rebuild their lives, unlock their potential,
+          and contribute meaningfully to society. Our mission is to break down systemic barriers, restore dignity,
+          and create pathways to lasting success for those too often overlooked.
+        </p>
+        <blockquote class="tagline">“Restoring Opportunity. Lifting Lives. Leveling the Field.”</blockquote>
+      </div>
+    </section>
+
+    <!-- ===== Pillars (replaces generic features) ===== -->
     <section class="section">
       <div class="container cards">
         <article class="card">
-          <h3 data-i18n="home.f1">Mentorship</h3>
-          <p data-i18n="home.f1_copy">Guidance, skills, and encouragement to help local youth roll forward.</p>
+          <h3>Restore Opportunity</h3>
+          <p class="muted">Access to mentorship, tools, and resources that open doors — no matter your starting point.</p>
         </article>
         <article class="card">
-          <h3 data-i18n="home.f2">Community</h3>
-          <p data-i18n="home.f2_copy">Events and programs at the Lily Event Center, 640 Old Airport Rd.</p>
+          <h3>Lift Lives</h3>
+          <p class="muted">Programs and events that provide practical support and community at the Lily Event Center.</p>
         </article>
         <article class="card">
-          <h3 data-i18n="home.f3">Support</h3>
-          <p data-i18n="home.f3_copy">From backpacks to workshops—we meet real needs with real action.</p>
+          <h3>Level the Field</h3>
+          <p class="muted">Breaking down barriers so people can rebuild with dignity and a fair shot at success.</p>
         </article>
       </div>
     </section>
 
-    <!-- Optional stats band -->
+    <!-- ===== Stats band (optional) ===== -->
     <section class="band">
       <div class="container stats">
         <div class="stat">
           <strong>150+</strong>
-          <span>Youth served</span>
+          <span>Neighbors served</span>
         </div>
         <div class="stat">
           <strong>25</strong>
           <span>Community events</span>
         </div>
         <div class="stat">
-          <strong>640 Old Airport Rd</strong>
-          <span>Lily Event Center</span>
+          <strong>Lily Event Center</strong>
+          <span>640 Old Airport Rd, Aiken SC</span>
         </div>
       </div>
     </section>

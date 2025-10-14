@@ -1,16 +1,40 @@
 <!doctype html>
 <html lang="en">
-<header class="site-header">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Contact — Roll Foundation</title>
+  <meta name="description" content="Contact the ROLL Foundation for volunteer, sponsorship, and partnership opportunities.">
+
+  <link rel="icon" href="./assets/img/logo/rolllogo2.png" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact — Roll Foundation">
+  <meta property="og:description" content="Reach out to the ROLL Foundation — Restoring Opportunity, Lifting Lives, Leveling the Field.">
+  <meta property="og:image" content="./assets/img/events/rollevent5.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Header (logo left • title center • nav right) ===== -->
+ <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html" style="display:inline-flex;align-items:center;gap:.5rem;text-decoration:none">
-      <img src="./assets/img/logo/rolllogo2.png" alt="Roll Foundation" width="140" height="40" style="display:block;height:auto;">
-    </a>
+    <div class="brand">
+      <img src="./assets/img/logo/rolllogo2.png" alt="Roll Foundation Logo">
+    </div>
+    <h1 class="site-title">Roll Foundation</h1>
 
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
     <nav id="site-nav" class="site-nav" data-collapsible>
       <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
       <a href="events.html" data-i18n="nav.events">Events</a>
       <a href="donate.html" data-i18n="nav.donate">Donate</a>
+      <a href="contact.html" data-i18n="contact.h1" aria-current="page">Contact</a>
       <button id="langToggle" class="btn small" aria-label="Toggle language">
         <span data-i18n="nav.lang">EN</span>
         <span class="visually-hidden" data-i18n="nav.lang_alt">ES</span>
@@ -18,66 +42,93 @@
     </nav>
   </div>
 </header>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">Roll Foundation</a>
 
-<button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
-<nav id="site-nav" class="site-nav" data-collapsible>
-  <a href="index.html" data-i18n="nav.home">Home</a>
-  <a href="events.html" data-i18n="nav.events">Events</a>
-  <a href="donate.html" data-i18n="nav.donate">Donate</a>
-  <button id="langToggle" class="btn small" aria-label="Toggle language">
-    <span data-i18n="nav.lang">EN</span>
-    <span class="visually-hidden" data-i18n="nav.lang_alt">ES</span>
-  </button>
-</nav>
-    </div>
-  </header>
+  <!-- ===== Main ===== -->
+  <main id="main">
+    <section class="hero" style="background:linear-gradient(180deg,#F7FBFF,#F3F8FE)">
+      <div class="container hero-inner">
+        <h1 data-i18n="contact.h1">Contact Us</h1>
+        <p class="lead" data-i18n="contact.lead">We’d love to hear from you. Whether you want to volunteer, partner, or learn more — reach out today.</p>
+      </div>
+    </section>
 
-  <main id="main" class="container" style="padding:2rem 1rem;">
-    <h1>Contact Us</h1>
-    <p>We’d love to hear from you. This form opens your email app to send us a message.</p>
+    <!-- Contact Form -->
+    <section class="section">
+      <div class="container narrow">
+        <!-- JS-enhanced mailto form to Mary -->
+        <form class="contact-form" id="contactForm" data-mailto>
+          <label for="cname">Name</label>
+          <input id="cname" name="Name" type="text" autocomplete="name" required placeholder="Your full name">
 
-   <form class="form" data-mailto>
-  <label for="cname">Name</label>
-  <input id="cname" name="name" type="text" autocomplete="name" required>
+          <label for="cemail" data-i18n="contact.email_label">Email</label>
+          <input id="cemail" name="Email" type="email" autocomplete="email" required placeholder="your@email.com">
 
-  <label for="cemail">Email</label>
-  <input id="cemail" name="email" type="email" autocomplete="email" required>
+          <label for="cmsg">Message</label>
+          <textarea id="cmsg" name="Message" rows="5" required placeholder="Write your message..."></textarea>
 
-  <label for="cmsg">Message</label>
-  <textarea id="cmsg" name="message" rows="5" required></textarea>
+          <!-- Honeypot (bot trap) -->
+          <label class="visually-hidden" for="company">Company</label>
+          <input id="company" name="Company" type="text" autocomplete="organization" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
 
-  <!-- Honeypot -->
-  <label class="visually-hidden" for="company">Company</label>
-  <input id="company" name="company" type="text" autocomplete="organization" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
+          <button class="btn primary" type="submit" data-i18n="contact.submit_btn">Send Message</button>
+          <p class="form-hint small">
+            Or email us directly:
+            <a href="mailto:mallen@therollfoundation.org">mallen@therollfoundation.org</a>
+          </p>
+        </form>
 
-  <button class="btn btn-primary" type="submit">Send Email</button>
-  <p class="form-hint">Or email us directly: <a href="mailto:CONTACT_EMAIL@example.com">CONTACT_EMAIL@example.com</a></p>
-</form>
+        <div class="contact-details">
+          <p><strong data-i18n="contact.phone_label">Phone:</strong> <a href="tel:+18036443002">(803) 644-3002</a></p>
+          <p><strong data-i18n="contact.address_label">Address:</strong> Lily Event Center • 640 Old Airport Road, Aiken, SC 29801</p>
+          <p><strong>Email:</strong> <a href="mailto:mallen@therollfoundation.org">mallen@therollfoundation.org</a></p>
+        </div>
+
+        <!-- Noscript fallback -->
+        <noscript>
+          <p class="small">JavaScript is disabled. Please email
+            <a href="mailto:mallen@therollfoundation.org">mallen@therollfoundation.org</a>.
+          </p>
+        </noscript>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container legal">© <span id="year"></span> ROLL Foundation. All rights reserved.</div>
+    <div class="container footer-inner">
+      <p id="footerLine" data-i18n="footer.line">© <span id="year"></span> Roll Foundation • A project of Citizen’s Park Office & Conference Center</p>
+    </div>
   </footer>
 
+  <!-- Mailto handler: builds a nice subject/body and opens the user’s email app -->
   <script>
-    function openMailto(e){
-      e.preventDefault();
-      const name = encodeURIComponent(document.getElementById('cname').value.trim());
-      const email = encodeURIComponent(document.getElementById('cemail').value.trim());
-      const msg = encodeURIComponent(document.getElementById('cmsg').value.trim());
-      const trap = document.getElementById('company').value.trim();
-      if (trap) return false; // bot trap
-      const subject = `Message from ${decodeURIComponent(name)} via ROLL Foundation site`;
-      const body = `Name: ${decodeURIComponent(name)}%0AEmail: ${decodeURIComponent(email)}%0A%0A${decodeURIComponent(msg)}`;
-      window.location.href = `mailto:CONTACT_EMAIL@example.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-      return false;
-    }
+    (function(){
+      const form = document.getElementById('contactForm');
+      if (!form) return;
+
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+
+        const nameEl = document.getElementById('cname');
+        const emailEl = document.getElementById('cemail');
+        const msgEl = document.getElementById('cmsg');
+        const trap = document.getElementById('company');
+
+        if (trap && trap.value.trim()) return false; // bot trap
+
+        const name = (nameEl.value || '').trim();
+        const email = (emailEl.value || '').trim();
+        const msg = (msgEl.value || '').trim();
+
+        const to = 'mallen@therollfoundation.org';
+        const subject = `Message from ${name || 'Website Visitor'} via ROLL Foundation site`;
+        const body = `Name: ${name}%0AEmail: ${email}%0A%0A${encodeURIComponent(msg)}`;
+
+        window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${body}`;
+        return false;
+      });
+    })();
   </script>
+
   <script defer src="./js/script.js"></script>
 </body>
 </html>

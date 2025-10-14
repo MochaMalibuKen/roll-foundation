@@ -1,32 +1,86 @@
 {
-  "nav": { "home": "Inicio", "events": "Eventos", "donate": "Donar", "lang": "ES", "lang_alt": "EN" },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "events": "Eventos",
+    "donate": "Donar",
+    "lang": "ES",
+    "lang_alt": "EN"
+  },
   "home": {
-    "hero_h1": "Servimos a los niños y a la comunidad con corazón.",
-    "hero_lead": "Fundada por la familia Allen, Roll Foundation apoya a la juventud con programas y eventos en el Lily Event Center.",
+    "hero_h1": "Restaurar oportunidades. Elevar vidas. Nivelar el campo.",
+    "hero_lead": "ROLL Foundation empodera a comunidades desatendidas con mentoría, recursos y dignidad — creando caminos hacia el éxito sostenible.",
     "cta_donate": "Donar",
     "cta_events": "Próximos eventos",
-    "f1": "Mentoría",
-    "f1_copy": "Orientación, habilidades y ánimo para impulsar a la juventud local.",
-    "f2": "Comunidad",
-    "f2_copy": "Eventos y programas en el Lily Event Center, 640 Old Airport Rd.",
-    "f3": "Apoyo",
-    "f3_copy": "Desde mochilas hasta talleres: atendemos necesidades reales con acción real."
+    "f1": "Restaurar oportunidades",
+    "f1_copy": "Conectamos a las personas con mentoría, herramientas y recursos que abren puertas — sin importar el punto de partida.",
+    "f2": "Elevar vidas",
+    "f2_copy": "A través de eventos y apoyo práctico, atendemos necesidades inmediatas mientras fortalecemos la comunidad.",
+    "f3": "Nivelar el campo",
+    "f3_copy": "Reducimos barreras y promovemos el acceso justo para que las segundas oportunidades se conviertan en nuevos comienzos."
+  },
+  "about": {
+    "h1": "Acerca de ROLL Foundation",
+    "intro_p1": "ROLL Foundation se dedica a restaurar oportunidades, elevar vidas y nivelar el campo para comunidades marginadas y desatendidas. Creemos que toda persona merece otra oportunidad para prosperar.",
+    "intro_p2": "Fundada por la familia Allen, nos asociamos con el Lily Event Center para realizar programas, encuentros y recursos que ayudan a la gente a pasar de sobrevivir a salir adelante.",
+    "mission_h": "Nuestra misión",
+    "mission_p1": "Al brindar acceso a recursos, mentoría y programas de apoyo, ayudamos a las personas a reconstruir sus vidas, liberar su potencial y contribuir de manera significativa a la sociedad.",
+    "mission_p2": "Nuestra misión es derribar barreras sistémicas, restaurar la dignidad y crear caminos de éxito duradero para quienes con demasiada frecuencia son pasados por alto.",
+    "pillars_h": "Nuestros pilares",
+    "p_restore_h": "Restaurar oportunidades",
+    "p_restore_p": "Conectamos con mentores, capacitación y herramientas que abren caminos reales hacia el trabajo, la educación y la estabilidad.",
+    "p_lift_h": "Elevar vidas",
+    "p_lift_p": "Mediante eventos y apoyo práctico, atendemos necesidades inmediatas mientras construimos comunidad a largo plazo.",
+    "p_level_h": "Nivelar el campo",
+    "p_level_p": "Abogamos por el acceso justo y reducimos barreras para que las segundas oportunidades se conviertan en nuevos comienzos.",
+    "contact_h": "Involúcrate",
+    "contact_p": "¿Listo para colaborar, ser voluntario o saber más? Nos encantará escucharte.",
+    "contact_email_label": "Escríbenos"
   },
   "events": {
-    "h1": "Próximos eventos",
-    "lead": "Programas y reuniones en el Lily Event Center.",
-    "c1": "Foto de cartel",
-    "c2": "Folleto del evento",
-    "c3": "Señalización",
-    "c4": "Mesa comunitaria"
+    "h1": "Eventos comunitarios",
+    "lead": "Reuniones y programas realizados en el Lily Event Center, Aiken SC.",
+    "e1_title": "Colecta de útiles escolares",
+    "e1_when": "Fecha por definir",
+    "e1_where": "Lily Event Center",
+    "e1_summary": "Únete para empacar mochilas con útiles para estudiantes locales. ¡Voluntarios bienvenidos!",
+    "e2_title": "Kits de cuidado navideños",
+    "e2_when": "Fecha por definir",
+    "e2_where": "Lily Event Center",
+    "e2_summary": "Ayuda a armar kits de cuidado para familias necesitadas.",
+    "cta_sponsor": "Patrocinar un evento",
+    "cta_contact": "Contáctanos para información de eventos"
   },
   "donate": {
     "h1": "Donar",
     "lead": "Cada donación nos ayuda a servir a más niños, más seguido.",
     "btn": "Donar con PayPal",
-    "qbo": "¿Prefieres QuickBooks Online? Podemos agregar un enlace de pago QBO aquí también."
+    "qbo": "¿Prefieres QuickBooks Online? Agrega aquí un enlace de pago QBO.",
+    "impact_h": "Tu impacto",
+    "impact_p1": "Tu apoyo financia programas de mentoría, alcance comunitario y eventos que generan un cambio duradero.",
+    "impact_p2": "Juntos restauramos oportunidades, elevamos vidas y nivelamos el campo para quienes están listos para una nueva oportunidad."
+  },
+  "contact": {
+    "h1": "Contáctanos",
+    "lead": "Nos encantaría saber de ti. Ya sea que quieras ser voluntario, colaborar o simplemente aprender más, comunícate hoy.",
+    "email_label": "Correo electrónico",
+    "phone_label": "Teléfono",
+    "address_label": "Dirección",
+    "submit_btn": "Enviar mensaje",
+    "success_msg": "¡Gracias! Nos pondremos en contacto pronto."
   },
   "footer": {
     "line": "© {{year}} Roll Foundation • Un proyecto de Citizen’s Park Office & Conference Center"
   }
+  "shesroll": {
+  "title": "She’s On A Roll",
+  "hero_lead": "Una celebración que eleva a mujeres y comunidad — presentada por ROLL Foundation en el Lily Event Center.",
+  "sponsors_h2": "Convocatoria a Patrocinadores",
+  "sponsors_p1": "Únete a “She’s On A Roll”, un evento diseñado para inspirar, empoderar y conectar a mujeres de nuestra comunidad. Los patrocinios financian directamente mentoría, talleres y alcance comunitario a través de ROLL Foundation.",
+  "sponsors_p2": "¿Quieres más información? Descarga nuestro paquete de patrocinio y escribe a la coordinadora del evento.",
+  "cta_packet": "Ver paquete de patrocinio",
+  "cta_email": "Escribir a la coordinadora",
+  "banner_h3": "Sede: Lily Event Center",
+  "banner_p": "640 Old Airport Road • Aiken, Carolina del Sur"
+}
 }
