@@ -1,0 +1,196 @@
+/* ===== Roll Foundation — LIGHT THEME styles.css ===== */
+/* Palette: bright, friendly blues */
+:root{
+  --bg:#F5F9FF;             /* page background */
+  --card:#FFFFFF;           /* surfaces/cards */
+  --text:#0B2340;           /* primary text (ink) */
+  --muted:#4D6B86;          /* secondary text */
+  --brand:#6EC1FF;          /* brand accent (sky blue) */
+  --ink:#0B2340;            /* text on brand */
+  --line:rgba(11,35,64,.12);/* light subtle lines */
+  --radius:16px; 
+  --radius-sm:12px; 
+  --shadow:0 6px 20px rgba(11,35,64,.08);
+  --container:1100px;
+}
+
+/* Reset / Base */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); 
+  color:var(--text); 
+  line-height:1.6;
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  /* subtle page background wash */
+  background-image: radial-gradient(50% 60% at 100% -10%, rgba(110,193,255,.25), transparent 60%),
+                    radial-gradient(50% 60% at -10% 100%, rgba(110,193,255,.18), transparent 60%);
+}
+img{display:block;max-width:100%;height:auto}
+a{color:#1560B8;text-decoration:none}
+a:hover{text-decoration:underline}
+
+.visually-hidden{
+  position:absolute !important; width:1px; height:1px; overflow:hidden;
+  clip:rect(1px,1px,1px,1px); clip-path:inset(50%); white-space:nowrap;
+}
+.container{max-width:var(--container);margin-inline:auto;padding:0 1rem}
+.small{font-size:.9rem}
+.muted{color:var(--muted)}
+.lead{color:var(--muted)}
+.mt-12{margin-top:.75rem}
+.section{padding:2.5rem 0}
+.band{
+  padding:1.25rem 0;
+  background:linear-gradient(180deg,#F0F7FF, #F5F9FF);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+/* Header / Nav (light, friendly) */
+.site-header{
+  position:sticky; top:0; z-index:50;
+  backdrop-filter:saturate(180%) blur(10px);
+  background:rgba(255,255,255,.85);
+  border-bottom:1px solid var(--line);
+  height:80px;
+  box-shadow:0 2px 8px rgba(11,35,64,.06);
+}
+.header-inner{
+  display:flex; align-items:center; justify-content:space-between;
+  height:100%; padding:0 2rem;
+}
+.brand img{
+  height:56px; width:auto; padding:6px 0; /* breathing room */
+}
+.site-nav{display:flex; gap:.6rem; align-items:center}
+.site-nav a{
+  color:var(--text); 
+  padding:.55rem .85rem; 
+  border-radius:8px;
+  font-size:1.05rem;
+}
+.site-nav a[aria-current="page"]{background:rgba(21,96,184,.08)}
+.site-nav a:hover{background:rgba(21,96,184,.10)}
+.nav-toggle{display:none;background:none;border:0;color:var(--text);font-size:1.25rem}
+
+/* Mobile nav */
+@media (max-width:760px){
+  .nav-toggle{display:inline-block}
+  .site-nav{
+    display:none; position:absolute; right:1rem; top:80px;
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:.5rem; flex-direction:column; min-width:240px; 
+    box-shadow:0 12px 26px rgba(11,35,64,.12)
+  }
+  .site-nav a{width:100%}
+}
+
+/* Hero — lighter wash, joyful */
+.hero{
+  min-height:60vh; 
+  display:flex; align-items:center; justify-content:center;
+  text-align:center; padding:3rem 1rem;
+  background:linear-gradient(180deg, rgba(21,96,184,.06), transparent);
+}
+.hero-inner{max-width:760px}
+
+/* Hard hero (background image applied inline on section) */
+.hard-hero{
+  position:relative; isolation:isolate;
+  background-size:cover; background-position:center;
+}
+.hard-hero::before{
+  content:""; position:absolute; inset:0; z-index:-1;
+  /* LIGHT overlay for readability but cheerful photo */
+  background:linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.25));
+}
+
+/* Cards */
+.cards{display:grid; gap:1rem; grid-template-columns:1fr}
+.card{
+  background:var(--card); border:1px solid var(--line);
+  border-radius:var(--radius); padding:18px; box-shadow:var(--shadow);
+}
+.card h3{margin:.2rem 0 .4rem}
+@media (min-width:720px){ .cards{grid-template-columns:repeat(3,1fr)} }
+
+/* Buttons */
+.btn{
+  display:inline-block; padding:.65rem 1rem; border-radius:var(--radius-sm);
+  border:1px solid var(--line); color:var(--text); background:#F8FBFF;
+  font-weight:600; text-decoration:none; line-height:1;
+  transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+  box-shadow:0 6px 16px rgba(11,35,64,.06);
+}
+.btn:hover{transform:translateY(-1px); background:#EEF6FF}
+.btn:focus{outline:2px solid var(--brand); outline-offset:2px}
+.btn.primary{
+  background:linear-gradient(180deg, #7FD0FF, #4AA3E8);
+  color:var(--ink); border-color:#7CC9FF; 
+  box-shadow:0 8px 22px rgba(74,163,232,.25);
+}
+
+/* Stats band */
+.stats{display:grid; gap:.75rem; grid-template-columns:1fr; text-align:center}
+.stat strong{display:block;font-size:1.35rem;color:#0B2F55}
+.stat span{color:var(--muted)}
+@media (min-width:720px){ .stats{grid-template-columns:repeat(3,1fr)} }
+
+/* Gallery */
+.gallery{display:grid; gap:.75rem; grid-template-columns:1fr 1fr}
+@media (min-width:720px){ .gallery{grid-template-columns:repeat(3,1fr)} }
+.gallery-item{
+  display:block; border-radius:12px; overflow:hidden; 
+  border:1px solid var(--line); background:var(--card); 
+  box-shadow:var(--shadow)
+}
+.gallery-item img{width:100%; height:auto; object-fit:cover; aspect-ratio:4/3}
+.caption{text-align:center; font-size:.9rem; color:var(--muted); padding:.5rem .25rem .25rem}
+
+/* Footer */
+.footer-inner{
+  padding:1rem 0; 
+  border-top:1px solid var(--line);
+  margin-top:1rem; 
+  text-align:center;
+  color:var(--muted);
+  background:linear-gradient(180deg,#FFFFFF, #F5F9FF);
+}
+/* Narrow container helper */
+.container.narrow{ max-width: 820px; }
+
+/* Watermark hero using event logo */
+.sponsor-hero {
+  min-height: 52vh; /* slightly shorter than home hero */
+  padding-top: 3rem; padding-bottom: 3rem;
+}
+
+/* Reusable watermark background (semi-transparent logo) */
+.watermark{
+  position: relative;
+  isolation: isolate;
+}
+.watermark::after{
+  content:"";
+  position:absolute; inset:0; z-index:-1;
+  background:
+    radial-gradient(65% 50% at 50% 35%, rgba(21,96,184,.09), transparent 65%),
+    var(--watermark) center/420px auto no-repeat;
+  opacity:.35;                   /* controls logo transparency */
+  mix-blend-mode:multiply;       /* blends into light theme softly */
+}
+@media (max-width:760px){
+  .watermark::after{
+    background:
+      radial-gradient(65% 50% at 50% 35%, rgba(21,96,184,.10), transparent 65%),
+      var(--watermark) center/260px auto no-repeat;
+  }
+}
+
+/* Checklist / Steps */
+.checklist{padding-left:1.1rem}
+.checklist li{margin:.25rem 0}
+.steps{margin:.25rem 0 0 1.1rem}
+.steps li{margin:.25rem 0}

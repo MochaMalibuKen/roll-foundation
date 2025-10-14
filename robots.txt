@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# If using GitHub Pages project site:
+# Replace YOUR-USERNAME below
+Sitemap: https://YOUR-USERNAME.github.io/rollfoundation/sitemap.xml

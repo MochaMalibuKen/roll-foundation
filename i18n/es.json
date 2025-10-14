@@ -1,0 +1,32 @@
+{
+  "nav": { "home": "Inicio", "events": "Eventos", "donate": "Donar", "lang": "ES", "lang_alt": "EN" },
+  "home": {
+    "hero_h1": "Servimos a los niños y a la comunidad con corazón.",
+    "hero_lead": "Fundada por la familia Allen, Roll Foundation apoya a la juventud con programas y eventos en el Lily Event Center.",
+    "cta_donate": "Donar",
+    "cta_events": "Próximos eventos",
+    "f1": "Mentoría",
+    "f1_copy": "Orientación, habilidades y ánimo para impulsar a la juventud local.",
+    "f2": "Comunidad",
+    "f2_copy": "Eventos y programas en el Lily Event Center, 640 Old Airport Rd.",
+    "f3": "Apoyo",
+    "f3_copy": "Desde mochilas hasta talleres: atendemos necesidades reales con acción real."
+  },
+  "events": {
+    "h1": "Próximos eventos",
+    "lead": "Programas y reuniones en el Lily Event Center.",
+    "c1": "Foto de cartel",
+    "c2": "Folleto del evento",
+    "c3": "Señalización",
+    "c4": "Mesa comunitaria"
+  },
+  "donate": {
+    "h1": "Donar",
+    "lead": "Cada donación nos ayuda a servir a más niños, más seguido.",
+    "btn": "Donar con PayPal",
+    "qbo": "¿Prefieres QuickBooks Online? Podemos agregar un enlace de pago QBO aquí también."
+  },
+  "footer": {
+    "line": "© {{year}} Roll Foundation • Un proyecto de Citizen’s Park Office & Conference Center"
+  }
+}

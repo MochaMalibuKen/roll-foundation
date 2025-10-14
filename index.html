@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Roll Foundation — Serving kids and community with heart.</title>
+  <meta name="description" content="Founded by the Allen family, Roll Foundation supports youth through programs and events hosted at the Lily Event Center.">
+
+  <!-- Favicon / Logo -->
+  <link rel="icon" href="./assets/img/logo/rolllogo2.png" type="image/png">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Roll Foundation">
+  <meta property="og:description" content="Serving kids and community with heart.">
+  <meta property="og:image" content="./assets/img/events/rollevent5.jpg">
+
+  <!-- Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Header (shared) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Roll Foundation">
+        <img src="./assets/img/logo/rolllogo2.png" alt="Roll Foundation" />
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
+      <nav id="site-nav" class="site-nav" data-collapsible>
+        <a href="index.html" data-i18n="nav.home" aria-current="page">Home</a>
+        <a href="events.html" data-i18n="nav.events">Events</a>
+        <a href="donate.html" data-i18n="nav.donate">Donate</a>
+        <button id="langToggle" class="btn small" aria-label="Toggle language">
+          <span data-i18n="nav.lang">EN</span>
+          <span class="visually-hidden" data-i18n="nav.lang_alt">ES</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Washed-out hero using rollevent5.jpg directly (no CSS var confusion) -->
+    <section class="hero hard-hero" style="background-image:url('./assets/img/events/rollevent5.jpg')">
+      <div class="container hero-inner">
+        <h1 data-i18n="home.hero_h1">Serving kids and community with heart.</h1>
+        <p class="lead" data-i18n="home.hero_lead">Founded by the Allen family, Roll Foundation supports youth through programs and events hosted at the Lily Event Center.</p>
+        <div class="cta-row">
+          <a class="btn primary" data-i18n="home.cta_donate" href="donate.html">Donate</a>
+          <a class="btn" data-i18n="home.cta_events" href="events.html">Upcoming Events</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature cards -->
+    <section class="section">
+      <div class="container cards">
+        <article class="card">
+          <h3 data-i18n="home.f1">Mentorship</h3>
+          <p data-i18n="home.f1_copy">Guidance, skills, and encouragement to help local youth roll forward.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="home.f2">Community</h3>
+          <p data-i18n="home.f2_copy">Events and programs at the Lily Event Center, 640 Old Airport Rd.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="home.f3">Support</h3>
+          <p data-i18n="home.f3_copy">From backpacks to workshops—we meet real needs with real action.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Optional stats band -->
+    <section class="band">
+      <div class="container stats">
+        <div class="stat">
+          <strong>150+</strong>
+          <span>Youth served</span>
+        </div>
+        <div class="stat">
+          <strong>25</strong>
+          <span>Community events</span>
+        </div>
+        <div class="stat">
+          <strong>640 Old Airport Rd</strong>
+          <span>Lily Event Center</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p id="footerLine" data-i18n="footer.line">© <span id="year"></span> Roll Foundation • A project of Citizen’s Park Office & Conference Center</p>
+    </div>
+  </footer>
+
+  <script defer src="./js/script.js"></script>
+</body>
+</html>
