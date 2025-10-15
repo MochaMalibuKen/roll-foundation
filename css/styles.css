@@ -306,3 +306,58 @@ a:hover{text-decoration:underline}
   .hero-poster{min-height: 52vh;} 
   .hero-poster .poster{ width:min(92%, 420px)}    
   }
+/* ---------- SHE’S ON A ROLL hero theme ---------- */
+.goldgreen-theme{
+  min-height: 60vh;                    /* larger hero */
+  position: relative;
+  isolation: isolate;
+  padding: 3rem 1rem 4rem;
+}
+
+.goldgreen-theme::before{
+  content:"";
+  position:absolute; inset:0; z-index:-2;
+  background: linear-gradient(160deg, #e6d36b 0%, #1c6b4d 100%); /* gold→green */
+}
+
+.goldgreen-theme::after{
+  content:"";
+  position:absolute; inset:0; z-index:-1;
+  background:
+    linear-gradient(rgba(255,255,255,.20), rgba(255,255,255,.10)),
+    var(--poster) center/cover no-repeat;
+  filter: blur(6px) saturate(1.1);
+  opacity: .9;                         /* reduce washout */
+  transform: scale(1.05);
+}
+
+.goldgreen-theme .poster{
+  display:block;
+  width:min(96%, 700px);               /* was 560px → bigger */
+  height:auto;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(11,35,64,.25);
+  border: 2px solid rgba(255,255,255,.4);
+  background:#fff;
+  margin-left:auto; margin-right:auto;
+}
+
+.goldgreen-theme h1{
+  margin-top:1.5rem;
+  font-size:clamp(2rem,4vw,2.8rem);
+  color:#fffce8;
+  text-shadow:0 2px 4px rgba(0,0,0,.3);
+}
+
+.goldgreen-theme .lead{
+  color:#fefefc;
+  max-width:640px;
+  margin:0.75rem auto 0;
+  line-height:1.5;
+}
+
+@media (max-width:600px){
+  .goldgreen-theme .poster{ width:min(94%, 480px); }
+  .goldgreen-theme{ min-height: 58vh; padding:2.5rem 1rem; }
+}
+/* END She’s On A Roll theme */
