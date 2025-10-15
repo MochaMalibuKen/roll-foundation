@@ -89,9 +89,9 @@ a:hover{text-decoration:underline}
 
 /* Hero — lighter wash, joyful */
 .hero{
-  min-height:60vh; 
+  min-height:56vh; 
   display:flex; align-items:center; justify-content:center;
-  text-align:center; padding:3rem 1rem;
+  text-align:center; padding:2.75rem 1rem;
   background:linear-gradient(180deg, rgba(21,96,184,.06), transparent);
 }
 .hero-inner{max-width:760px}
@@ -99,12 +99,13 @@ a:hover{text-decoration:underline}
 /* Hard hero (background image applied inline on section) */
 .hard-hero{
   position:relative; isolation:isolate;
-  background-size:cover; background-position:center;
+  background-size:cover; background-position:center 28%;
+  background-repeat: no-repeat;
 }
 .hard-hero::before{
   content:""; position:absolute; inset:0; z-index:-1;
   /* LIGHT overlay for readability but cheerful photo */
-  background:linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.25));
+  background:linear-gradient(rgba(255,255,255,.35), rgba(255,255,255,.20));
 }
 
 /* Cards */
@@ -271,4 +272,43 @@ a:hover{text-decoration:underline}
 @media (min-width:600px){
   .hero h1{ font-size:2.5rem; }
   .hero .lead{ font-size:1.25rem; }
+}
+.hero-poster {
+  min-height: 54vh; 
+  position: relative;
+  isolation: isolate;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+.hero-poster::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(rgba(255,255,255,.30), rgba(255,255,255,.15)),
+    var(--poster) center/320px auto no-repeat;
+  background-size: 320px auto;
+  background-position: center 32%;
+  opacity: .25;                   /* controls logo transparency */
+  mix-blend-mode: multiply;       /* blends into light theme softly */
+}
+.hero-poster .poster {
+  display: block;
+  width: min(92%, 560px);
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(11,35,64,.22);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width:600px){
+  .hero-poster{min-height: 52vh;} 
+  .hero-poster .poster{ width:min(92%, 420px)}
+    background:
+      linear-gradient(rgba(255,255,255,.35), rgba(255,255,255,.20)),
+      var(--poster) center/240px auto no-repeat;
+    background-size: 240px auto;
+    background-position: center 28%;
+  }
 }
