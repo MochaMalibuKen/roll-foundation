@@ -304,11 +304,5 @@ a:hover{text-decoration:underline}
 }
 @media (max-width:600px){
   .hero-poster{min-height: 52vh;} 
-  .hero-poster .poster{ width:min(92%, 420px)}
-    background:
-      linear-gradient(rgba(255,255,255,.35), rgba(255,255,255,.20)),
-      var(--poster) center/240px auto no-repeat;
-    background-size: 240px auto;
-    background-position: center 28%;
+  .hero-poster .poster{ width:min(92%, 420px)}    
   }
-}
