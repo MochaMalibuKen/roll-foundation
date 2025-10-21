@@ -3,36 +3,41 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>She's On A Roll - ROLL Foundation Event</title>
   <meta name="description" content="Join us for She's On A Roll - an elegant evening supporting the ROLL Foundation's mission.">
-  
+
   <!-- Favicon -->
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-  
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="She's On A Roll - ROLL Foundation Event">
+  <meta property="og:description" content="March 5th, 2026 • 11:00 AM • The Rye Patch">
+  <meta property="og:image" content="./assets/img/events/shes-on-a-roll1.jpg">
+
   <!-- Fonts & CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Shared Header -->
+  <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <img src="./assets/img/logo/rolllogo2.png" alt="Roll Foundation Logo">
+        <img src="./assets/img/logo/rolllogo2.png" alt="ROLL Foundation Logo" width="70" height="70">
       </div>
-      <h1 class="site-title"> The ROLL Foundation</h1>
+      <h1 class="site-title">The ROLL Foundation</h1>
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">☰</button>
       <nav id="site-nav" class="site-nav" data-collapsible>
         <a href="index.html" data-i18n="nav.home">Home</a>
         <a href="about.html" data-i18n="nav.about">About</a>
-        <a href="events.html" data-i18n="nav.events" aria-current="page">Events</a>
-        <a href="donate.html" data-i18n="nav.donate">Donate</a>
+        <a href="events.html" data-i18n="nav.events" class="nav-cta" aria-current="page">Events</a>
         <a href="contact.html" data-i18n="contact.h1">Contact</a>
         <button id="langToggle" class="btn small" aria-label="Toggle language">
           <span data-i18n="nav.lang">EN</span>
@@ -43,17 +48,11 @@
   </header>
 
   <main id="main">
-   <!-- HERO (uses inline background-image) -->
-    <section class="hero goldgreen-theme countdown-hero" style="--poster: url('./assets/img/events/shes-on-a-roll1.jpg')">
+    <!-- ===== Event Hero Section with Countdown ===== -->
+    <section class="hero event-hero goldgreen-theme" style="--poster: url('./assets/img/events/shes-on-a-roll1.jpg')">
       <div class="container">
-        <div class="poster">
-          <img src="./assets/img/events/shes-on-a-roll1.jpg" alt="She's On A Roll Event Poster">
-        </div>
         
-        <h1>She's On A Roll</h1>
-        <p class="lead">March 5th, 2026 • 11:00 AM • The Rye Patch</p>
-        
-        <!-- Royal Countdown Timer -->
+        <!-- Royal Countdown Timer (Above Logo) -->
         <div class="royal-countdown">
           <div class="countdown-crown">
             <svg width="60" height="48" viewBox="0 0 60 48" fill="none">
@@ -97,43 +96,72 @@
             <div class="sparkle sparkle-6"></div>
           </div>
         </div>
-        
-        <div class="cta-row">
-          <a class="btn primary royal-btn" href="#tickets">Get Your Tickets</a>
-          <a class="btn secondary royal-btn" href="#details">Event Details</a>
+
+        <!-- Event Logo/Poster (Below Countdown) -->
+        <div class="event-poster">
+          <img src="./assets/img/events/shes-on-a-roll1.jpg" alt="She's On A Roll Event Poster" class="poster-image">
+        </div>
+
+        <!-- Event Details -->
+        <div class="event-details">
+          <h1 class="event-title">She's On A Roll</h1>
+          <div class="event-info">
+            <div class="event-date-time">
+              <strong>March 5th, 2026</strong>
+              <span>11:00 AM</span>
+            </div>
+            <div class="event-venue">
+              <strong>The Rye Patch</strong>
+              <span>Aiken, SC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="event-cta">
+          <a class="btn primary royal-btn btn-large" href="#tickets">
+            <span>Get Your Tickets</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" stroke="currentColor" stroke-width="2"/>
+              <path d="M9 1v4M15 1v4M9 11h6M9 15h3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </a>
+          <a class="btn secondary royal-btn btn-large" href="#details">
+            <span>Event Details</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Sponsor Info Section -->
-    <section class="section">
-      <div class="container narrow">
-        <h2>Calling All Sponsors</h2>
-        <p>Join us in supporting “She’s On A Roll” — a unique event designed to inspire, empower, and connect women in our community. Sponsorships directly fund mentorship programs, workshops, and local outreach through the ROLL Foundation.</p>
-        
-        <p><strong>Want to learn more?</strong> Download our sponsorship packet below and reach out to our event coordinator.</p>
-
-        <div class="cta-row">
-          <a class="btn primary" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" target="_blank">View Sponsorship Packet</a>
-          <a class="btn" href="mailto:mallen@therollfoundation.org">Email the Event Coordinator</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Optional Footer Banner -->
-    <section class="band" style="background:#F7FBFF;padding:2rem 0;text-align:center;">
-      <h3 style="margin:0 0 .5rem;">Hosted at the Lily Event Center</h3>
-      <p style="margin:0;">640 Old Airport Road • Aiken, South Carolina</p>
-    </section>
+    <!-- Additional event content sections would go here -->
+    
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p id="footerLine">© <span id="year"></span> Roll Foundation • A project of Citizen’s Park Office & Conference Center</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="./assets/img/logo/rolllogo2.png" alt="ROLL Foundation Logo" width="50" height="50">
+          <p class="footer-tagline">Restoring Opportunity. Lifting Lives. Leveling the Field.</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p id="footerLine">© <span id="year"></span> The ROLL Foundation. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
-  <script defer src="./js/script.js"></script>
+  <!-- JavaScript for countdown -->
   <script>
     // Event configuration - easily changeable for each of the 5 events
     const EVENT_CONFIG = {
@@ -167,6 +195,9 @@
         document.querySelector('.countdown-title').textContent = 'Event is Live!';
       }
     }
+    
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
     
     // Update countdown every second
     updateCountdown();

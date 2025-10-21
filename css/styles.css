@@ -288,6 +288,170 @@ a:hover{text-decoration:underline}
   }
 }
 
+/* Event Hero Page Layout */
+.event-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.event-hero .container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Event Poster Styling */
+.event-poster {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.2),
+    0 8px 16px rgba(255, 215, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.event-poster:hover {
+  transform: scale(1.02);
+}
+
+.poster-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Event Details */
+.event-details {
+  text-align: center;
+  color: #ffffff;
+}
+
+.event-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #FFD700;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.event-info {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.event-date-time,
+.event-venue {
+  text-align: center;
+}
+
+.event-date-time strong,
+.event-venue strong {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.event-date-time span,
+.event-venue span {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Event CTA Buttons */
+.event-cta {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-large {
+  padding: 1.25rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 12px;
+}
+
+/* Royal Countdown Timer - Updated for event page */
+.royal-countdown {
+  order: -1; /* This ensures the countdown appears first */
+  position: relative;
+  margin: 0 auto 2rem;
+  max-width: 800px;
+  background: linear-gradient(135deg, rgba(255,215,0,0.25), rgba(255,193,7,0.15));
+  border: 2px solid rgba(255,215,0,0.5);
+  border-radius: 24px;
+  padding: 2.5rem 1.5rem;
+  backdrop-filter: blur(15px);
+  box-shadow: 
+    0 20px 40px rgba(255,215,0,0.2),
+    inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+/* Background overlay for event hero */
+.event-hero.goldgreen-theme::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    var(--poster) center/cover no-repeat;
+  z-index: -1;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .event-hero .container {
+    gap: 2rem;
+  }
+  
+  .event-poster {
+    max-width: 300px;
+  }
+  
+  .event-info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .event-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-large {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .royal-countdown {
+    margin: 0 auto 1.5rem;
+    padding: 2rem 1rem;
+  }
+}
+
 /* Cards */
 .cards{display:grid; gap:1rem; grid-template-columns:1fr}
 .card{
