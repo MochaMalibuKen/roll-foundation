@@ -153,6 +153,141 @@ a:hover{text-decoration:underline}
   background:linear-gradient(rgba(255,255,255,.35), rgba(255,255,255,.20));
 }
 
+/* Hero Section Improvements */
+.hero.hard-hero {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  position: relative;
+  padding: 0; /* Remove any padding that creates white space */
+  margin: 0; /* Remove any margin */
+}
+
+/* Ensure no white space around hero image */
+.hero.hard-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1); /* Very light overlay for text readability */
+  z-index: 1;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  padding: 3rem 2rem;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Remove any container margins that might create white space */
+.hero .container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Text styling for better readability over the image */
+.hero h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.hero .lead {
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+/* Button styling for the hero section */
+.hero .cta-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero .btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero .btn.primary {
+  background: linear-gradient(135deg, #FFD700, #FFA000);
+  color: #1a1a1a;
+  border: none;
+}
+
+.hero .btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+.hero .btn:not(.primary) {
+  background: rgba(255, 255, 255, 0.9);
+  color: #1a1a1a;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.hero .btn:not(.primary):hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero.hard-hero {
+    min-height: 60vh;
+  }
+  
+  .hero-inner {
+    padding: 2rem 1rem;
+    min-height: 60vh;
+  }
+  
+  .hero .cta-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .hero .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .hero.hard-hero {
+    min-height: 50vh;
+  }
+  
+  .hero-inner {
+    padding: 1.5rem 1rem;
+    min-height: 50vh;
+  }
+}
+
 /* Cards */
 .cards{display:grid; gap:1rem; grid-template-columns:1fr}
 .card{
