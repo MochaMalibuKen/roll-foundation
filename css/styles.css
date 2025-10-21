@@ -54,16 +54,36 @@ a:hover{text-decoration:underline}
   backdrop-filter:saturate(180%) blur(10px);
   background:rgba(255,255,255,.85);
   border-bottom:1px solid var(--line);
-  height:80px;
+  height:100px; /* increased from 90px to accommodate larger logo */
   box-shadow:0 2px 8px rgba(11,35,64,.06);
 }
+
 .header-inner{
-  display:flex; align-items:center; justify-content:space-between;
-  height:100%; padding:0 2rem;
+  display:grid; 
+  grid-template-columns:1fr auto 1fr; 
+  align-items:center; 
+  height:100%; 
+  padding:0 2rem;
 }
+
 .brand img{
-  height:56px; width:auto; padding:6px 0; /* breathing room */
+  height:85px; /* increased from 70px */
+  width:auto; 
+  padding:8px 0; /* increased breathing room */
+  transition: transform 0.2s ease; /* smooth hover effect */
 }
+
+.brand img:hover {
+  transform: scale(1.05); /* subtle hover effect */
+}
+
+.site-title{
+  text-align:center; 
+  font-size:1.4rem; 
+  font-weight:700; 
+  margin:0;
+}
+
 .site-nav{display:flex; gap:.6rem; align-items:center}
 .site-nav a{
   color:var(--text); 
@@ -77,14 +97,39 @@ a:hover{text-decoration:underline}
 
 /* Mobile nav */
 @media (max-width:760px){
+  .site-header{
+    height:90px; /* slightly smaller on mobile */
+  }
+  
+  .brand img{
+    height:75px; /* proportionally sized for mobile */
+    padding:7px 0;
+  }
+  
   .nav-toggle{display:inline-block}
   .site-nav{
-    display:none; position:absolute; right:1rem; top:80px;
+    display:none; position:absolute; right:1rem; top:90px; /* adjusted for new header height */
     background:var(--card); border:1px solid var(--line); border-radius:12px;
     padding:.5rem; flex-direction:column; min-width:240px; 
     box-shadow:0 12px 26px rgba(11,35,64,.12)
   }
   .site-nav a{width:100%}
+}
+
+/* Extra small mobile devices */
+@media (max-width:480px){
+  .site-header{
+    height:80px;
+  }
+  
+  .brand img{
+    height:65px;
+    padding:6px 0;
+  }
+  
+  .site-nav{
+    top:80px; /* adjusted for smaller header */
+  }
 }
 
 /* Hero — lighter wash, joyful */
@@ -359,5 +404,242 @@ a:hover{text-decoration:underline}
 @media (max-width:600px){
   .goldgreen-theme .poster{ width:min(94%, 480px); }
   .goldgreen-theme{ min-height: 58vh; padding:2.5rem 1rem; }
+}
+
+/* Royal Countdown Timer Styles */
+.countdown-hero {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.royal-countdown {
+  position: relative;
+  margin: 3rem auto 2rem;
+  max-width: 800px;
+  background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,193,7,0.1));
+  border: 2px solid rgba(255,215,0,0.4);
+  border-radius: 24px;
+  padding: 2.5rem 1.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 20px 40px rgba(255,215,0,0.15),
+    inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+.countdown-crown {
+  color: #FFD700;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 4px 8px rgba(255,215,0,0.3));
+  animation: crownGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes crownGlow {
+  0% { filter: drop-shadow(0 4px 8px rgba(255,215,0,0.3)); }
+  100% { filter: drop-shadow(0 6px 12px rgba(255,215,0,0.5)); }
+}
+
+.countdown-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #FFD700;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  letter-spacing: 0.5px;
+}
+
+.countdown-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.countdown-unit {
+  background: linear-gradient(145deg, #FFD700, #FFA000);
+  border-radius: 16px;
+  padding: 1.25rem 1rem;
+  min-width: 100px;
+  box-shadow: 
+    0 8px 16px rgba(255,215,0,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 -1px 0 rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.countdown-unit::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255,255,255,0.3), 
+    transparent
+  );
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.countdown-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.5);
+}
+
+.countdown-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0.5rem;
+}
+
+.countdown-separator {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFD700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.1); }
+}
+
+/* Magical Sparkles */
+.countdown-sparkles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.sparkle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #FFD700;
+  border-radius: 50%;
+  animation: sparkle 4s infinite;
+  box-shadow: 0 0 6px #FFD700;
+}
+
+.sparkle-1 { top: 20%; left: 15%; animation-delay: 0s; }
+.sparkle-2 { top: 30%; right: 20%; animation-delay: 1s; }
+.sparkle-3 { bottom: 25%; left: 25%; animation-delay: 2s; }
+.sparkle-4 { top: 60%; right: 15%; animation-delay: 0.5s; }
+.sparkle-5 { bottom: 40%; right: 30%; animation-delay: 1.5s; }
+.sparkle-6 { top: 45%; left: 10%; animation-delay: 2.5s; }
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1) rotate(180deg); }
+}
+
+/* Royal Buttons */
+.royal-btn {
+  background: linear-gradient(135deg, #FFD700, #FFA000);
+  border: 2px solid rgba(255,215,0,0.6);
+  color: #1a1a1a;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.3);
+  box-shadow: 0 4px 12px rgba(255,215,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.royal-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255,215,0,0.4);
+  background: linear-gradient(135deg, #FFA000, #FFD700);
+}
+
+.royal-btn.secondary {
+  background: transparent;
+  color: #FFD700;
+  border-color: #FFD700;
+}
+
+.royal-btn.secondary:hover {
+  background: rgba(255,215,0,0.1);
+  color: #FFD700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .royal-countdown {
+    margin: 2rem auto 1.5rem;
+    padding: 2rem 1rem;
+  }
+  
+  .countdown-display {
+    gap: 0.5rem;
+  }
+  
+  .countdown-unit {
+    min-width: 80px;
+    padding: 1rem 0.75rem;
+  }
+  
+  .countdown-number {
+    font-size: 2rem;
+  }
+  
+  .countdown-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-display {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .countdown-separator {
+    display: none;
+  }
+  
+  .countdown-unit {
+    min-width: 120px;
+  }
+}
+
+/* Additional Royal Theme Enhancements */
+.goldgreen-theme .royal-countdown {
+  background: linear-gradient(135deg, 
+    rgba(255,215,0,0.2), 
+    rgba(255,193,7,0.15),
+    rgba(28,107,77,0.1)
+  );
+}
+
+/* Magical floating animation for the whole countdown */
+.royal-countdown {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
 /* END She’s On A Roll theme */
