@@ -19,10 +19,10 @@
   <!-- Fonts & CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="gold-green-theme">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ===== Header ===== -->
@@ -49,7 +49,7 @@
 
   <main id="main">
     <!-- ===== Hero Section ===== -->
-    <section class="hero hard-hero" style="background-image:url('./assets/img/events/shes-on-a-roll1.jpg')">
+    <section class="hero hard-hero goldgreen-theme" style="background-image:url('./assets/img/events/rollevent5.jpg')">
       <div class="container hero-inner">
         <h2 class="visually-hidden">Welcome</h2>
         <h1 data-i18n="home.hero_h1">Restoring Opportunity. Lifting Lives. Leveling the Field.</h1>
@@ -57,14 +57,14 @@
           The ROLL Foundation empowers underserved communities through mentorship, resources, and dignity — creating pathways to lasting success.
         </p>
         <div class="cta-row">
-          <a class="btn primary" data-i18n="home.cta_events" href="events.html">View Events & Get Tickets</a>
-          <a class="btn" data-i18n="home.cta_about" href="about.html">Learn More About Us</a>
+          <a class="btn primary gold-btn" data-i18n="home.cta_events" href="events.html">View Events & Get Tickets</a>
+          <a class="btn secondary green-btn" data-i18n="home.cta_about" href="about.html">Learn More About Us</a>
         </div>
       </div>
     </section>
 
     <!-- ===== Mission Section ===== -->
-    <section class="section mission">
+    <section class="section mission gold-green-section">
       <div class="container narrow">
         <h2>Our Mission</h2>
         <p>
@@ -81,17 +81,17 @@
     </section>
 
     <!-- ===== Impact Pillars ===== -->
-    <section class="section">
+    <section class="section green-accent-section">
       <div class="container cards">
-        <article class="card">
+        <article class="card gold-card">
           <h3>Restore Opportunity</h3>
           <p class="muted">Access to mentorship, tools, and resources that open doors — no matter your starting point.</p>
         </article>
-        <article class="card">
+        <article class="card gold-card">
           <h3>Lift Lives</h3>
           <p class="muted">Programs and events that provide practical support and build stronger communities.</p>
         </article>
-        <article class="card">
+        <article class="card gold-card">
           <h3>Level the Field</h3>
           <p class="muted">Breaking down barriers so people can rebuild with dignity and a fair shot at success.</p>
         </article>
@@ -99,19 +99,19 @@
     </section>
 
     <!-- ===== Upcoming Events Highlight ===== -->
-    <section class="section events-highlight">
+    <section class="section events-highlight gold-accent-section">
       <div class="container narrow">
         <h2>Upcoming Events</h2>
         <p class="lead">Join us in making a difference in our community through meaningful events and gatherings.</p>
         <div class="cta-row">
-          <a class="btn primary" href="events.html">View All Events</a>
-          <a class="btn" href="about.html">Learn About Our Impact</a>
+          <a class="btn primary gold-btn" href="events.html">View All Events</a>
+          <a class="btn secondary green-btn" href="about.html">Learn About Our Impact</a>
         </div>
       </div>
     </section>
 
     <!-- ===== Impact Stats ===== -->
-    <section class="band">
+    <section class="band gold-green-band">
       <div class="container stats">
         <div class="stat">
           <strong>150+</strong>
@@ -129,7 +129,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer gold-green-footer">
     <div class="container footer-inner">
       <div class="footer-content">
         <div class="footer-brand">
@@ -139,13 +139,12 @@
         <div class="footer-links">
           <a href="about.html">About</a>
           <a href="events.html">Events</a>
-          <!-- <a href="donate.html">Donate</a> Hidden for now -->
           <a href="contact.html">Contact</a>
           <a href="privacy.html">Privacy</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p id="footerLine" data-i18n="footer.line">© <span id="year"></span> The ROLL Foundation. All rights reserved.</p>
+        <p id="footerLine">© <span id="year"></span> The ROLL Foundation. All rights reserved.</p>
       </div>
     </div>
   </footer>

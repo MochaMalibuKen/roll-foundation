@@ -942,3 +942,65 @@ a:hover{text-decoration:underline}
   50% { transform: translateY(-10px); }
 }
 /* END She’s On A Roll theme */
+
+/* Sponsorship Section on Event Page */
+.sponsor-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(28,107,77,0.05));
+  border: 2px solid rgba(255,215,0,0.3);
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.sponsor-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #FFD700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.sponsor-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.sponsor-btn {
+  background: linear-gradient(135deg, var(--light-gold), var(--gold));
+  border: 2px solid var(--dark-gold);
+  color: var(--dark-green);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(218, 165, 32, 0.3);
+}
+
+.sponsor-btn:hover {
+  background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(218, 165, 32, 0.4);
+}
+
+/* Mobile adjustments for sponsor section */
+@media (max-width: 768px) {
+  .sponsor-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+  
+  .sponsor-title {
+    font-size: 1.5rem;
+  }
+  
+  .sponsor-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
