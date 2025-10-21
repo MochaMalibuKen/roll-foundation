@@ -29,7 +29,6 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <!-- Updated for new logo - you can replace this path when you get the new logo -->
         <img src="./assets/img/logo/rolllogo2.png" alt="ROLL Foundation Logo" width="70" height="70">
       </div>
       <h1 class="site-title">The ROLL Foundation</h1>
@@ -38,8 +37,7 @@
       <nav id="site-nav" class="site-nav" data-collapsible>
         <a href="index.html" data-i18n="nav.home" aria-current="page">Home</a>
         <a href="about.html" data-i18n="nav.about">About</a>
-        <a href="events.html" data-i18n="nav.events">Events</a>
-        <a href="donate.html" data-i18n="nav.donate" class="nav-cta">Donate</a>
+        <a href="events.html" data-i18n="nav.events" class="nav-cta">Events</a>
         <a href="contact.html" data-i18n="contact.h1">Contact</a>
         <button id="langToggle" class="btn small" aria-label="Toggle language">
           <span data-i18n="nav.lang">EN</span>
@@ -51,7 +49,7 @@
 
   <main id="main">
     <!-- ===== Hero Section ===== -->
-    <section class="hero hard-hero" style="background-image:url('./assets/img/events/rollevent5.jpg')">
+    <section class="hero hard-hero" style="background-image:url('./assets/img/events/shes-on-a-roll1.jpg')">
       <div class="container hero-inner">
         <h2 class="visually-hidden">Welcome</h2>
         <h1 data-i18n="home.hero_h1">Restoring Opportunity. Lifting Lives. Leveling the Field.</h1>
@@ -59,8 +57,8 @@
           The ROLL Foundation empowers underserved communities through mentorship, resources, and dignity — creating pathways to lasting success.
         </p>
         <div class="cta-row">
-          <a class="btn primary" data-i18n="home.cta_donate" href="donate.html">Donate Now</a>
-          <a class="btn" data-i18n="home.cta_events" href="events.html">View Events</a>
+          <a class="btn primary" data-i18n="home.cta_events" href="events.html">View Events & Get Tickets</a>
+          <a class="btn" data-i18n="home.cta_about" href="about.html">Learn More About Us</a>
         </div>
       </div>
     </section>
@@ -100,6 +98,18 @@
       </div>
     </section>
 
+    <!-- ===== Upcoming Events Highlight ===== -->
+    <section class="section events-highlight">
+      <div class="container narrow">
+        <h2>Upcoming Events</h2>
+        <p class="lead">Join us in making a difference in our community through meaningful events and gatherings.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="events.html">View All Events</a>
+          <a class="btn" href="about.html">Learn About Our Impact</a>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== Impact Stats ===== -->
     <section class="band">
       <div class="container stats">
@@ -129,7 +139,7 @@
         <div class="footer-links">
           <a href="about.html">About</a>
           <a href="events.html">Events</a>
-          <a href="donate.html">Donate</a>
+          <!-- <a href="donate.html">Donate</a> Hidden for now -->
           <a href="contact.html">Contact</a>
           <a href="privacy.html">Privacy</a>
         </div>
@@ -144,7 +154,5 @@
     // Set current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-  <!-- Only include if script.js actually exists -->
-  <!-- <script defer src="./js/script.js"></script> -->
 </body>
 </html>

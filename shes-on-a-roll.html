@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>She’s On A Roll — Roll Foundation</title>
-  <meta name="description" content="She’s On A Roll is a signature ROLL Foundation event empowering women and uplifting community.">
-
-  <link rel="icon" href="./assets/img/logo/rolllogo2.png" type="image/png">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="She’s On A Roll — Roll Foundation">
-  <meta property="og:description" content="Sponsor or support this empowering community event by the ROLL Foundation.">
-  <meta property="og:image" content="./assets/img/events/shes-on-a-roll.jpg">
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>She's On A Roll - ROLL Foundation Event</title>
+  <meta name="description" content="Join us for She's On A Roll - an elegant evening supporting the ROLL Foundation's mission.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -45,16 +44,66 @@
 
   <main id="main">
    <!-- HERO (uses inline background-image) -->
-    <section class="hero hero-poster goldgreen-theme" style="--poster:url('./assets/img/events/shes-on-a-roll.jpg?v=7')">
-  <div class="container hero-inner">
-    <img class="poster" src="./assets/img/events/shes-on-a-roll.jpg?v=7" alt="She’s On A Roll Poster" />
-    <h1 data-i18n="shesroll.title">She’s On A Roll</h1>
-    <p class="lead" data-i18n="shesroll.hero_lead">
-      An uplifting celebration of empowerment, unity, and community impact.
-    </p>
-  </div>
-</section>
-
+    <section class="hero goldgreen-theme countdown-hero" style="--poster: url('./assets/img/events/shes-on-a-roll1.jpg')">
+      <div class="container">
+        <div class="poster">
+          <img src="./assets/img/events/shes-on-a-roll1.jpg" alt="She's On A Roll Event Poster">
+        </div>
+        
+        <h1>She's On A Roll</h1>
+        <p class="lead">March 5th, 2026 • 11:00 AM • The Rye Patch</p>
+        
+        <!-- Royal Countdown Timer -->
+        <div class="royal-countdown">
+          <div class="countdown-crown">
+            <svg width="60" height="48" viewBox="0 0 60 48" fill="none">
+              <path d="M6 36h48l-6-24-12 12-6-12-6 12-12-12L6 36z" fill="currentColor"/>
+              <circle cx="12" cy="12" r="3" fill="currentColor"/>
+              <circle cx="30" cy="6" r="4" fill="currentColor"/>
+              <circle cx="48" cy="12" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          
+          <div class="countdown-title">Event Begins In</div>
+          
+          <div class="countdown-display" id="countdown">
+            <div class="countdown-unit">
+              <div class="countdown-number" id="days">000</div>
+              <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-unit">
+              <div class="countdown-number" id="hours">00</div>
+              <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-unit">
+              <div class="countdown-number" id="minutes">00</div>
+              <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-unit">
+              <div class="countdown-number" id="seconds">00</div>
+              <div class="countdown-label">Seconds</div>
+            </div>
+          </div>
+          
+          <div class="countdown-sparkles">
+            <div class="sparkle sparkle-1"></div>
+            <div class="sparkle sparkle-2"></div>
+            <div class="sparkle sparkle-3"></div>
+            <div class="sparkle sparkle-4"></div>
+            <div class="sparkle sparkle-5"></div>
+            <div class="sparkle sparkle-6"></div>
+          </div>
+        </div>
+        
+        <div class="cta-row">
+          <a class="btn primary royal-btn" href="#tickets">Get Your Tickets</a>
+          <a class="btn secondary royal-btn" href="#details">Event Details</a>
+        </div>
+      </div>
+    </section>
 
     <!-- Sponsor Info Section -->
     <section class="section">
@@ -85,5 +134,43 @@
   </footer>
 
   <script defer src="./js/script.js"></script>
+  <script>
+    // Event configuration - easily changeable for each of the 5 events
+    const EVENT_CONFIG = {
+      // March 5th, 2026 at 11:00 AM EST
+      date: new Date('2026-03-05T11:00:00-05:00'),
+      name: "She's On A Roll",
+      venue: "The Rye Patch"
+    };
+    
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const eventTime = EVENT_CONFIG.date.getTime();
+      const timeLeft = eventTime - now;
+      
+      if (timeLeft > 0) {
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+        
+        document.getElementById('days').textContent = days.toString().padStart(3, '0');
+        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+      } else {
+        // Event has started
+        document.getElementById('days').textContent = '000';
+        document.getElementById('hours').textContent = '00';
+        document.getElementById('minutes').textContent = '00';
+        document.getElementById('seconds').textContent = '00';
+        document.querySelector('.countdown-title').textContent = 'Event is Live!';
+      }
+    }
+    
+    // Update countdown every second
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
 </body>
 </html>
