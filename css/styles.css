@@ -971,21 +971,24 @@ a:hover{text-decoration:underline}
 }
 
 .sponsor-btn {
-  background: linear-gradient(135deg, var(--light-gold), var(--gold));
-  border: 2px solid var(--dark-gold);
-  color: var(--dark-green);
+  display: inline-block;
+  background: linear-gradient(135deg, #F0E68C, #DAA520);
+  border: 2px solid #B8860B;
+  color: #154a36;
   padding: 1rem 2rem;
   border-radius: 12px;
   font-weight: 600;
   font-size: 1.1rem;
+  text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 6px 16px rgba(218, 165, 32, 0.3);
 }
 
 .sponsor-btn:hover {
-  background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+  background: linear-gradient(135deg, #DAA520, #B8860B);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(218, 165, 32, 0.4);
+  text-decoration: none;
 }
 
 /* Mobile adjustments for sponsor section */
