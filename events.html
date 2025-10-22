@@ -4,170 +4,151 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>The ROLL Foundation — Events</title>
-  <meta name="description" content="Programs and gatherings held in CSRA.">
+  <title>Events - ROLL Foundation</title>
+  <meta name="description" content="Join our community events at the Lily Event Center in Aiken, SC.">
 
+  <!-- Favicon -->
   <link rel="icon" href="./assets/img/logo/rolllogo2.png" type="image/png">
+
+  <!-- Open Graph / Social -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Roll Foundation — Events">
-  <meta property="og:description" content="Programs and gatherings at the Lily Event Center.">
+  <meta property="og:title" content="Events - ROLL Foundation">
+  <meta property="og:description" content="Community events hosted at the Lily Event Center">
   <meta property="og:image" content="./assets/img/events/rollevent5.jpg">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
-  <style>
-    /* Events Page Text Readability Improvements */
-    .events-page .hero h1,
-    .events-page .hero .lead {
-      color: #ffffff;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-    }
-
-    /* Event Cards Text Contrast */
-    .event-card h3 {
-      color: #1a1a1a;
-      font-weight: 700;
-    }
-
-    .event-card .event-date,
-    .event-card .event-venue {
-      color: #333333;
-      font-weight: 600;
-    }
-
-    .event-card .event-description {
-      color: #444444;
-      line-height: 1.6;
-    }
-
-    /* General text improvements for events */
-    .events-section h2 {
-      color: var(--forest-green);
-      text-shadow: none;
-    }
-
-    .events-section .lead {
-      color: #333333;
-    }
-
-    /* Event Hero specific improvements */
-    .event-hero h1 {
-      color: #ffffff;
-      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
-      font-weight: 700;
-    }
-
-    .event-hero .lead {
-      color: rgba(255, 255, 255, 0.95);
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-    }
-
-    /* Event details text */
-    .event-details .event-title {
-      color: #FFD700;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-    }
-
-    .event-details strong {
-      color: #FFD700;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    }
-
-    .event-details span {
-      color: rgba(255, 255, 255, 0.95);
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    }
-  </style>
+  <script src="./js/i18n.js"></script>
 </head>
-<body>
+<body class="gold-green-theme events-page">
   <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="brand">
-      <img src="./assets/img/logo/rolllogo2.png" alt="Roll Foundation Logo">
-    </div>
-    <h1 class="site-title">The ROLL Foundation</h1>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="./assets/img/logo/rolllogo2.png" alt="ROLL Foundation Logo" width="70" height="70">
+      </div>
+      <h1 class="site-title">The ROLL Foundation</h1>
 
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
-    <nav id="site-nav" class="site-nav" data-collapsible>
-      <a href="index.html" data-i18n="nav.home">Home</a>
-      <a href="about.html" data-i18n="nav.about">About</a>
-      <a href="events.html" data-i18n="nav.events" aria-current="page">Events</a>
-      <a href="donate.html" data-i18n="nav.donate">Donate</a>
-      <a href="contact.html" data-i18n="contact.h1">Contact</a>
-      <button id="langToggle" class="btn small" aria-label="Toggle language">
-        <span data-i18n="nav.lang">EN</span>
-        <span class="visually-hidden" data-i18n="nav.lang_alt">ES</span>
-      </button>
-    </nav>
-  </div>
-</header>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">☰</button>
+      <nav id="site-nav" class="site-nav" data-collapsible>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="events.html" data-i18n="nav.events" aria-current="page">Events</a>
+        <a href="shes-on-a-roll.html" data-i18n="nav.shes_on_a_roll" class="nav-event">She's On A Roll</a>
+        <a href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf" class="nav-sponsor" data-i18n="nav.sponsorship">Sponsorship Packet</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        <button id="langToggle" class="btn small" aria-label="Toggle language">
+          <span data-i18n="nav.lang">EN</span>
+          <span class="visually-hidden" data-i18n="nav.lang_alt">ES</span>
+        </button>
+      </nav>
+    </div>
+  </header>
 
   <main id="main">
-    <!-- Could reuse rollevent5; leaving plain hero for variety (optional) -->
-    <section class="hero hard-hero" style="background-image:url('./assets/img/events/rollevent5.jpg')">
+    <!-- ===== Events Hero Section ===== -->
+    <section class="hero hard-hero goldgreen-theme" style="background-image:url('./assets/img/events/rollevent5.jpg')">
       <div class="container hero-inner">
-        <h1 data-i18n="events.h1">Upcoming Events</h1>
-        <p class="lead" data-i18n="events.lead">Programs and gatheringsv held at locations in CSRA.</p>
-        <p class="muted small">Lily Event Center • 640 Old Airport Road, Aiken, SC 29801</p>
+        <h1 data-i18n="events.h1">Community Events</h1>
+        <p class="lead" data-i18n="events.lead">
+          Gatherings and programs hosted at the Lily Event Center, Aiken SC.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary gold-btn" href="shes-on-a-roll.html">She's On A Roll Event</a>
+          <a class="btn secondary green-btn" data-i18n="events.cta_sponsor" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">Sponsor an Event</a>
+        </div>
       </div>
     </section>
-    <section class="section">
-  <div class="container">
-    <div class="card" style="display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap">
-      <div>
-        <h3>She’s on a ROLL — Sponsors</h3>
-        <p class="muted small">Packet + contact info for sponsorships.</p>
-      </div>
-      <a class="btn primary" href="shes-on-a-roll-sponsors.html">Sponsor Info</a>
-      <a class="btn secondary green-btn" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">Get Sponsorship Info</a>
-    </div>
-  </div>
-</section>
 
-    <!-- Photo gallery with bilingual captions -->
-    <section class="section">
+    <!-- ===== Featured Event ===== -->
+    <section class="section events-highlight gold-accent-section">
       <div class="container">
-        <div class="gallery" aria-label="Event photos">
-          <figure class="gallery-item">
-            <a href="./assets/img/events/rollevent1.jpg">
-              <img src="./assets/img/events/rollevent1.jpg" alt="Poster photo" data-i18n="events.c1" loading="lazy">
-            </a>
-            <figcaption class="caption"><span data-i18n="events.c1">Poster photo</span></figcaption>
-          </figure>
+        <div class="event-card featured-event">
+          <div class="event-image">
+            <img src="./assets/img/events/shes-on-a-roll1.jpg" alt="She's On A Roll Event" loading="lazy">
+          </div>
+          <div class="event-content">
+            <h2>She's On A Roll</h2>
+            <div class="event-meta">
+              <p class="event-date"><strong>March 5th, 2026</strong> • 11:00 AM</p>
+              <p class="event-venue"><strong>The Rye Patch</strong> • Aiken, SC</p>
+            </div>
+            <p class="event-description">
+              An uplifting celebration of women, community, and empowerment — presented by the ROLL Foundation.
+            </p>
+            <div class="event-actions">
+              <a class="btn primary gold-btn" href="shes-on-a-roll.html">Learn More & Get Tickets</a>
+              <a class="btn secondary green-btn" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">Sponsor This Event</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <figure class="gallery-item">
-            <a href="./assets/img/events/rollevent2.jpg">
-              <img src="./assets/img/events/rollevent2.jpg" alt="Event flyer" data-i18n="events.c2" loading="lazy">
-            </a>
-            <figcaption class="caption"><span data-i18n="events.c2">Event flyer</span></figcaption>
-          </figure>
-
-          <figure class="gallery-item">
-            <a href="./assets/img/events/rollevent3.jpg">
-              <img src="./assets/img/events/rollevent3.jpg" alt="Signage" data-i18n="events.c3" loading="lazy">
-            </a>
-            <figcaption class="caption"><span data-i18n="events.c3">Signage</span></figcaption>
-          </figure>
-
-          <figure class="gallery-item">
-            <a href="./assets/img/events/rollevent4.jpg">
-              <img src="./assets/img/events/rollevent4.jpg" alt="Community table" data-i18n="events.c4" loading="lazy">
-            </a>
-            <figcaption class="caption"><span data-i18n="events.c4">Community table</span></figcaption>
-          </figure>
+    <!-- ===== Additional Events ===== -->
+    <section class="section events-section green-accent-section">
+      <div class="container">
+        <h2>More Events Coming Soon</h2>
+        <div class="events-grid">
+          <article class="event-card">
+            <h3 data-i18n="events.e1_title">Back-to-School Drive</h3>
+            <p class="event-meta">
+              <strong data-i18n="events.e1_when">Date TBA</strong><br>
+              <span data-i18n="events.e1_where">Lily Event Center</span>
+            </p>
+            <p data-i18n="events.e1_summary">Join us to pack backpacks with supplies for local students. Volunteers welcome!</p>
+          </article>
+          
+          <article class="event-card">
+            <h3 data-i18n="events.e2_title">Holiday Care Kits</h3>
+            <p class="event-meta">
+              <strong data-i18n="events.e2_when">Date TBA</strong><br>
+              <span data-i18n="events.e2_where">Lily Event Center</span>
+            </p>
+            <p data-i18n="events.e2_summary">Help assemble care kits for families in need.</p>
+          </article>
+        </div>
+        
+        <div class="events-cta">
+          <p class="lead">Want to learn more about upcoming events or sponsorship opportunities?</p>
+          <div class="cta-row">
+            <a class="btn primary gold-btn" data-i18n="events.cta_contact" href="contact.html">Contact Us for Event Info</a>
+            <a class="btn secondary green-btn" data-i18n="events.cta_sponsor" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">Sponsor an Event</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer gold-green-footer">
     <div class="container footer-inner">
-      <p id="footerLine" data-i18n="footer.line">© <span id="year"></span> The ROLL Foundation </p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="./assets/img/logo/rolllogo2.png" alt="ROLL Foundation Logo" width="50" height="50">
+          <p class="footer-tagline" data-i18n="footer.tagline">Restoring Opportunity. Lifting Lives. Leveling the Field.</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html" data-i18n="footer.about">About</a>
+          <a href="events.html" data-i18n="footer.events">Events</a>
+          <a href="shes-on-a-roll.html">She's On A Roll</a>
+          <a href="contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p id="footerLine" data-i18n="footer.line">© {{year}} The ROLL Foundation. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
-  <script defer src="./js/script.js"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

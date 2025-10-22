@@ -122,3 +122,21 @@ document.addEventListener('DOMContentLoaded', () => {
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = I18n;
 }
+
+// Add to the head section
+<script src="./js/i18n.js"></script>
+</head>
+
+// Update navigation to include all links
+<nav id="site-nav" class="site-nav" data-collapsible>
+  <a href="index.html" data-i18n="nav.home">Home</a>
+  <a href="about.html" data-i18n="nav.about">About</a>
+  <a href="events.html" data-i18n="nav.events">Events</a>
+  <a href="shes-on-a-roll.html" data-i18n="nav.shes_on_a_roll" class="nav-event">She's On A Roll</a>
+  <a href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf" class="nav-sponsor">Sponsorship Packet</a>
+  <a href="contact.html" data-i18n="contact.h1" aria-current="page">Contact</a>
+  <button id="langToggle" class="btn small" aria-label="Toggle language">
+    <span data-i18n="nav.lang">EN</span>
+    <span class="visually-hidden" data-i18n="nav.lang_alt">ES</span>
+  </button>
+</nav>

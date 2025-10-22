@@ -3,17 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>About Us - ROLL Foundation</title>
   <meta name="description" content="Learn about the ROLL Foundation's mission to restore opportunity, lift lives, and level the field.">
-  
+
   <!-- Favicon -->
-  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-  
+  <link rel="icon" href="./assets/img/logo/rolllogo2.png" type="image/png">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About Us - ROLL Foundation">
+  <meta property="og:description" content="Learn about our mission to restore opportunity, lift lives, and level the field.">
+  <meta property="og:image" content="./assets/img/events/rollevent5.jpg">
+
   <!-- Fonts & CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/i18n.js"></script>
 </head>
 <body class="gold-green-theme">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -32,8 +40,8 @@
         <a href="about.html" data-i18n="nav.about" aria-current="page">About</a>
         <a href="events.html" data-i18n="nav.events">Events</a>
         <a href="shes-on-a-roll.html" data-i18n="nav.shes_on_a_roll" class="nav-event">She's On A Roll</a>
-        <a href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf" class="nav-sponsor">Sponsorship Packet</a>
-        <a href="contact.html" data-i18n="contact.h1">Contact</a>
+        <a href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf" class="nav-sponsor" data-i18n="nav.sponsorship">Sponsorship Packet</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
         <button id="langToggle" class="btn small" aria-label="Toggle language">
           <span data-i18n="nav.lang">EN</span>
           <span class="visually-hidden" data-i18n="nav.lang_alt">ES</span>
@@ -46,13 +54,13 @@
     <!-- ===== About Hero Section ===== -->
     <section class="hero hard-hero goldgreen-theme" style="background-image:url('./assets/img/events/rollevent5.jpg')">
       <div class="container hero-inner">
-        <h1>About The ROLL Foundation</h1>
-        <p class="lead">
+        <h1 data-i18n="about.h1">About The ROLL Foundation</h1>
+        <p class="lead" data-i18n="about.hero_lead">
           Restoring Opportunity. Lifting Lives. Leveling the Field.
         </p>
         <div class="cta-row">
-          <a class="btn primary gold-btn" href="events.html">View Our Events</a>
-          <a class="btn secondary green-btn" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">Get Sponsorship Info</a>
+          <a class="btn primary gold-btn" data-i18n="about.cta_events" href="events.html">View Our Events</a>
+          <a class="btn secondary green-btn" data-i18n="about.cta_sponsor" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">Get Sponsorship Info</a>
         </div>
       </div>
     </section>
@@ -60,17 +68,14 @@
     <!-- ===== Mission Section ===== -->
     <section class="section mission gold-green-section">
       <div class="container narrow">
-        <h2>Our Mission</h2>
-        <p>
-          The ROLL Foundation is dedicated to restoring opportunity, lifting lives, and leveling the field for disenfranchised and underserved communities.
-          We believe every individual deserves another chance to thrive.
+        <h2 data-i18n="about.mission_h">Our Mission</h2>
+        <p data-i18n="about.mission_p1">
+          By providing access to resources, mentorship, and supportive programs, we empower people to rebuild their lives, unlock their potential, and contribute meaningfully to society.
         </p>
-        <p>
-          By providing access to resources, mentorship, and supportive programs, we empower people to rebuild their lives, unlock their potential,
-          and contribute meaningfully to society. Our mission is to break down systemic barriers, restore dignity,
-          and create pathways to lasting success for those too often overlooked.
+        <p data-i18n="about.mission_p2">
+          Our mission is to break down systemic barriers, restore dignity, and create pathways to lasting success for those too often overlooked.
         </p>
-        <blockquote class="tagline">"Restoring Opportunity. Lifting Lives. Leveling the Field."</blockquote>
+        <blockquote class="tagline" data-i18n="home.mission_quote">"Restoring Opportunity. Lifting Lives. Leveling the Field."</blockquote>
       </div>
     </section>
 
@@ -78,16 +83,16 @@
     <section class="section green-accent-section">
       <div class="container cards">
         <article class="card gold-card">
-          <h3>Restore Opportunity</h3>
-          <p class="muted">Access to mentorship, tools, and resources that open doors — no matter your starting point.</p>
+          <h3 data-i18n="about.p_restore_h">Restore Opportunity</h3>
+          <p class="muted" data-i18n="about.p_restore_p">We connect people with mentors, training, and tools that open real pathways to work, education, and stability.</p>
         </article>
         <article class="card gold-card">
-          <h3>Lift Lives</h3>
-          <p class="muted">Programs and events that provide practical support and build stronger communities.</p>
+          <h3 data-i18n="about.p_lift_h">Lift Lives</h3>
+          <p class="muted" data-i18n="about.p_lift_p">Through events and practical support, we meet immediate needs while building long-term community.</p>
         </article>
         <article class="card gold-card">
-          <h3>Level the Field</h3>
-          <p class="muted">Breaking down barriers so people can rebuild with dignity and a fair shot at success.</p>
+          <h3 data-i18n="about.p_level_h">Level the Field</h3>
+          <p class="muted" data-i18n="about.p_level_p">We advocate for fair access and reduce barriers so second chances become new beginnings.</p>
         </article>
       </div>
     </section>
@@ -95,11 +100,11 @@
     <!-- ===== Get Involved CTA ===== -->
     <section class="section gold-accent-section">
       <div class="container narrow">
-        <h2>Get Involved</h2>
-        <p class="lead">Join us in making a difference in our community.</p>
+        <h2 data-i18n="about.get_involved_title">Get Involved</h2>
+        <p class="lead" data-i18n="about.get_involved_lead">Join us in making a difference in our community.</p>
         <div class="cta-row">
-          <a class="btn primary gold-btn" href="events.html">Attend Our Events</a>
-          <a class="btn secondary green-btn" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">Become a Sponsor</a>
+          <a class="btn primary gold-btn" data-i18n="about.attend_events" href="events.html">Attend Our Events</a>
+          <a class="btn secondary green-btn" data-i18n="about.become_sponsor" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">Become a Sponsor</a>
         </div>
       </div>
     </section>
@@ -110,18 +115,18 @@
       <div class="footer-content">
         <div class="footer-brand">
           <img src="./assets/img/logo/rolllogo2.png" alt="ROLL Foundation Logo" width="50" height="50">
-          <p class="footer-tagline">Restoring Opportunity. Lifting Lives. Leveling the Field.</p>
+          <p class="footer-tagline" data-i18n="footer.tagline">Restoring Opportunity. Lifting Lives. Leveling the Field.</p>
         </div>
         <div class="footer-links">
-          <a href="about.html">About</a>
-          <a href="events.html">Events</a>
+          <a href="about.html" data-i18n="footer.about">About</a>
+          <a href="events.html" data-i18n="footer.events">Events</a>
           <a href="shes-on-a-roll.html">She's On A Roll</a>
-          <a href="contact.html">Contact</a>
-          <a href="privacy.html">Privacy</a>
+          <a href="contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p id="footerLine">© <span id="year"></span> The ROLL Foundation. All rights reserved.</p>
+        <p id="footerLine" data-i18n="footer.line">© {{year}} The ROLL Foundation. All rights reserved.</p>
       </div>
     </div>
   </footer>

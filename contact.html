@@ -15,6 +15,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/i18n.js"></script>
 </head>
 
 <body>
@@ -33,8 +34,9 @@
       <a href="index.html" data-i18n="nav.home">Home</a>
       <a href="about.html" data-i18n="nav.about">About</a>
       <a href="events.html" data-i18n="nav.events">Events</a>
-      <a href="donate.html" data-i18n="nav.donate">Donate</a>
-      <a href="contact.html" data-i18n="contact.h1" aria-current="page">Contact</a>
+      <a href="shes-on-a-roll.html" data-i18n="nav.shes_on_a_roll" class="nav-event">She's On A Roll</a>
+      <a href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf" class="nav-sponsor" data-i18n="nav.sponsorship">Sponsorship Packet</a>
+      <a href="contact.html" data-i18n="nav.contact" aria-current="page">Contact</a>
       <button id="langToggle" class="btn small" aria-label="Toggle language">
         <span data-i18n="nav.lang">EN</span>
         <span class="visually-hidden" data-i18n="nav.lang_alt">ES</span>
@@ -90,11 +92,11 @@
           </p>
         </noscript>
 
-        <!-- Add sponsorship CTA to contact page -->
+        <!-- Add sponsorship CTA with i18n -->
         <div class="sponsor-cta">
-          <h3>Interested in Sponsoring?</h3>
-          <p>Partner with us to make a lasting impact in our community.</p>
-          <a class="btn sponsor-btn" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">
+          <h3 data-i18n="shesroll.sponsor_title">Interested in Sponsoring?</h3>
+          <p data-i18n="shesroll.sponsor_desc">Partner with us to make a lasting impact in our community.</p>
+          <a class="btn sponsor-btn" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf" data-i18n="shesroll.download_packet">
             📄 Download Sponsorship Packet
           </a>
         </div>
@@ -104,7 +106,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p id="footerLine" data-i18n="footer.line">© <span id="year"></span> The ROLL Foundation </p>
+      <p id="footerLine" data-i18n="footer.line">© {{year}} The ROLL Foundation. All rights reserved.</p>
     </div>
   </footer>
 
