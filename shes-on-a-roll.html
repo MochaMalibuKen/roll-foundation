@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/i18n.js"></script>
 </head>
 <body class="gold-green-theme">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -65,37 +66,28 @@
             </svg>
           </div>
           
-          <div class="countdown-title">Event Begins In</div>
+          <div class="countdown-title" data-i18n="shesroll.countdown_title">Event Begins In</div>
           
           <div class="countdown-display" id="countdown">
             <div class="countdown-unit">
               <div class="countdown-number" id="days">000</div>
-              <div class="countdown-label">Days</div>
+              <div class="countdown-label" data-i18n="shesroll.days">Days</div>
             </div>
             <div class="countdown-separator">:</div>
             <div class="countdown-unit">
               <div class="countdown-number" id="hours">00</div>
-              <div class="countdown-label">Hours</div>
+              <div class="countdown-label" data-i18n="shesroll.hours">Hours</div>
             </div>
             <div class="countdown-separator">:</div>
             <div class="countdown-unit">
               <div class="countdown-number" id="minutes">00</div>
-              <div class="countdown-label">Minutes</div>
+              <div class="countdown-label" data-i18n="shesroll.minutes">Minutes</div>
             </div>
             <div class="countdown-separator">:</div>
             <div class="countdown-unit">
               <div class="countdown-number" id="seconds">00</div>
-              <div class="countdown-label">Seconds</div>
+              <div class="countdown-label" data-i18n="shesroll.seconds">Seconds</div>
             </div>
-          </div>
-          
-          <div class="countdown-sparkles">
-            <div class="sparkle sparkle-1"></div>
-            <div class="sparkle sparkle-2"></div>
-            <div class="sparkle sparkle-3"></div>
-            <div class="sparkle sparkle-4"></div>
-            <div class="sparkle sparkle-5"></div>
-            <div class="sparkle sparkle-6"></div>
           </div>
         </div>
 
@@ -122,27 +114,19 @@
         <!-- Call to Action Buttons -->
         <div class="event-cta">
           <a class="btn primary royal-btn btn-large" href="#tickets">
-            <span>Get Your Tickets</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" stroke="currentColor" stroke-width="2"/>
-              <path d="M9 1v4M15 1v4M9 11h6M9 15h3" stroke="currentColor" stroke-width="2"/>
-            </svg>
+            <span data-i18n="shesroll.get_tickets">Get Your Tickets</span>
           </a>
           <a class="btn secondary royal-btn btn-large" href="#details">
-            <span>Event Details</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-              <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2"/>
-            </svg>
+            <span data-i18n="shesroll.event_details">Event Details</span>
           </a>
         </div>
         
         <!-- Sponsorship Packet Link -->
         <div class="sponsor-section">
-          <h3 class="sponsor-title">Interested in Sponsoring?</h3>
-          <p class="sponsor-description">Partner with us to make this event even more impactful for our community.</p>
+          <h3 class="sponsor-title" data-i18n="shesroll.sponsor_title">Interested in Sponsoring?</h3>
+          <p class="sponsor-description" data-i18n="shesroll.sponsor_desc">Partner with us to make this event even more impactful for our community.</p>
           <a class="btn sponsor-btn" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">
-            <span>📄 Download Sponsorship Packet</span>
+            <span data-i18n="shesroll.download_packet">📄 Download Sponsorship Packet</span>
           </a>
         </div>
       </div>
@@ -169,11 +153,10 @@
     </div>
   </footer>
 
-  <!-- JavaScript for countdown -->
+  <!-- Updated JavaScript for countdown with proper i18n -->
   <script>
-    // Event configuration - easily changeable for each of the 5 events
+    // Event configuration
     const EVENT_CONFIG = {
-      // March 5th, 2026 at 11:00 AM EST
       date: new Date('2026-03-05T11:00:00-05:00'),
       name: "She's On A Roll",
       venue: "The Rye Patch"
@@ -195,12 +178,16 @@
         document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
         document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
       } else {
-        // Event has started
+        // Event has started - use i18n for "Event is Live!"
         document.getElementById('days').textContent = '000';
         document.getElementById('hours').textContent = '00';
         document.getElementById('minutes').textContent = '00';
         document.getElementById('seconds').textContent = '00';
-        document.querySelector('.countdown-title').textContent = 'Event is Live!';
+        
+        // Update with translated text when available
+        if (window.i18n) {
+          window.i18n.updateCountdownText();
+        }
       }
     }
     

@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/i18n.js"></script>
 </head>
 <body class="gold-green-theme">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -65,7 +66,7 @@
         
         <!-- Fixed sponsorship link to actual PDF -->
         <div class="sponsor-cta" style="margin-top: 1.5rem;">
-          <a class="btn sponsor-btn" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">
+          <a class="btn sponsor-btn" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf" data-i18n="shesroll.download_packet">
             📄 Download Sponsorship Packet
           </a>
         </div>
@@ -75,13 +76,17 @@
     <!-- ===== Mission Section ===== -->
     <section class="section mission gold-green-section">
       <div class="container narrow">
-        <h2>Our Mission</h2>
-        <p>
+        <h2 data-i18n="home.mission_title">Our Mission</h2>
+        <p data-i18n="home.mission_p1">
           The ROLL Foundation is dedicated to restoring opportunity, lifting lives, and leveling the field for disenfranchised and underserved communities.
-          By providing access to resources, mentorship, and supportive programs, we empower people to rebuild their lives, unlock their potential,
-          and contribute meaningfully to society.
+          We believe every individual deserves another chance to thrive.
         </p>
-        <blockquote class="tagline">"Restoring Opportunity. Lifting Lives. Leveling the Field."</blockquote>
+        <p data-i18n="home.mission_p2">
+          By providing access to resources, mentorship, and supportive programs, we empower people to rebuild their lives, unlock their potential,
+          and contribute meaningfully to society. Our mission is to break down systemic barriers, restore dignity,
+          and create pathways to lasting success for those too often overlooked.
+        </p>
+        <blockquote class="tagline" data-i18n="home.mission_quote">"Restoring Opportunity. Lifting Lives. Leveling the Field."</blockquote>
       </div>
     </section>
 
@@ -89,16 +94,16 @@
     <section class="section green-accent-section">
       <div class="container cards">
         <article class="card gold-card">
-          <h3>Restore Opportunity</h3>
-          <p class="muted">Access to mentorship, tools, and resources that open doors — no matter your starting point.</p>
+          <h3 data-i18n="home.f1">Restore Opportunity</h3>
+          <p class="muted" data-i18n="home.f1_copy">Access to mentorship, tools, and resources that open doors — no matter your starting point.</p>
         </article>
         <article class="card gold-card">
-          <h3>Lift Lives</h3>
-          <p class="muted">Programs and events that provide practical support and build stronger communities.</p>
+          <h3 data-i18n="home.f2">Lift Lives</h3>
+          <p class="muted" data-i18n="home.f2_copy">Programs and events that provide practical support and build stronger communities.</p>
         </article>
         <article class="card gold-card">
-          <h3>Level the Field</h3>
-          <p class="muted">Breaking down barriers so people can rebuild with dignity and a fair shot at success.</p>
+          <h3 data-i18n="home.f3">Level the Field</h3>
+          <p class="muted" data-i18n="home.f3_copy">Breaking down barriers so people can rebuild with dignity and a fair shot at success.</p>
         </article>
       </div>
     </section>
@@ -106,11 +111,11 @@
     <!-- ===== Upcoming Events Highlight ===== -->
     <section class="section events-highlight gold-accent-section">
       <div class="container narrow">
-        <h2>Upcoming Events</h2>
-        <p class="lead">Join us in making a difference in our community through meaningful events and gatherings.</p>
+        <h2 data-i18n="home.events_title">Upcoming Events</h2>
+        <p class="lead" data-i18n="home.events_lead">Join us in making a difference in our community through meaningful events and gatherings.</p>
         <div class="cta-row">
-          <a class="btn primary gold-btn" href="events.html">View All Events</a>
-          <a class="btn secondary green-btn" href="about.html">Learn About Our Impact</a>
+          <a class="btn primary gold-btn" data-i18n="home.events_cta" href="events.html">View All Events</a>
+          <a class="btn secondary green-btn" data-i18n="home.sponsor_cta" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">Become a Sponsor</a>
         </div>
       </div>
     </section>
@@ -119,43 +124,40 @@
     <section class="band gold-green-band">
       <div class="container stats">
         <div class="stat">
-          <strong>150+</strong>
-          <span>Community events</span>
+          <strong data-i18n="home.stat1_number">150+</strong>
+          <span data-i18n="home.stat1_label">Neighbors served</span>
         </div>
         <div class="stat">
-          <strong>25</strong>
-          <span>Neighbors served</span>
+          <strong data-i18n="home.stat2_number">25</strong>
+          <span data-i18n="home.stat2_label">Community events</span>
         </div>
         <div class="stat">
-          <strong>100%</strong>
-          <span>Community focused</span>
+          <strong data-i18n="home.stat3_number">100%</strong>
+          <span data-i18n="home.stat3_label">Community focused</span>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer gold-green-footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <img src="./assets/img/logo/rolllogo2.png" alt="ROLL Foundation Logo" width="50" height="50">
-        <p class="footer-tagline">Restoring Opportunity. Lifting Lives. Leveling the Field.</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="./assets/img/logo/rolllogo2.png" alt="ROLL Foundation Logo" width="50" height="50">
+          <p class="footer-tagline" data-i18n="footer.tagline">Restoring Opportunity. Lifting Lives. Leveling the Field.</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html" data-i18n="footer.about">About</a>
+          <a href="events.html" data-i18n="footer.events">Events</a>
+          <a href="shes-on-a-roll.html">She's On A Roll</a>
+          <a href="contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="events.html">Events</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy</a>
+      <div class="footer-bottom">
+        <p id="footerLine" data-i18n="footer.line">© {{year}} The ROLL Foundation. All rights reserved.</p>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p id="footerLine">© <span id="year"></span> The ROLL Foundation. All rights reserved.</p>
     </div>
   </footer>
-
-  <script>
-    // Set current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

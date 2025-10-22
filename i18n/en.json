@@ -3,7 +3,10 @@
     "home": "Home",
     "about": "About",
     "events": "Events",
+    "shes_on_a_roll": "She's On A Roll",
+    "sponsorship": "Sponsorship Packet",
     "donate": "Donate",
+    "contact": "Contact",
     "lang": "EN",
     "lang_alt": "ES"
   },
@@ -11,16 +14,34 @@
     "hero_h1": "Restoring Opportunity. Lifting Lives. Leveling the Field.",
     "hero_lead": "The ROLL Foundation empowers underserved communities through mentorship, resources, and dignity — creating pathways to lasting success.",
     "cta_donate": "Donate",
-    "cta_events": "Upcoming Events",
+    "cta_events": "View Events & Get Tickets",
+    "cta_about": "Learn More About Us",
+    "mission_title": "Our Mission",
+    "mission_p1": "The ROLL Foundation is dedicated to restoring opportunity, lifting lives, and leveling the field for disenfranchised and underserved communities. We believe every individual deserves another chance to thrive.",
+    "mission_p2": "By providing access to resources, mentorship, and supportive programs, we empower people to rebuild their lives, unlock their potential, and contribute meaningfully to society. Our mission is to break down systemic barriers, restore dignity, and create pathways to lasting success for those too often overlooked.",
+    "mission_quote": "\"Restoring Opportunity. Lifting Lives. Leveling the Field.\"",
     "f1": "Restore Opportunity",
     "f1_copy": "Access to mentorship, tools, and resources that open doors — no matter your starting point.",
     "f2": "Lift Lives",
-    "f2_copy": "Programs and events that provide practical support and community at the Lily Event Center.",
+    "f2_copy": "Programs and events that provide practical support and build stronger communities.",
     "f3": "Level the Field",
-    "f3_copy": "Breaking down barriers so people can rebuild with dignity and a fair shot at success."
+    "f3_copy": "Breaking down barriers so people can rebuild with dignity and a fair shot at success.",
+    "events_title": "Upcoming Events",
+    "events_lead": "Join us in making a difference in our community through meaningful events and gatherings.",
+    "events_cta": "View All Events",
+    "sponsor_cta": "Become a Sponsor",
+    "stat1_number": "150+",
+    "stat1_label": "Neighbors served",
+    "stat2_number": "25",
+    "stat2_label": "Community events",
+    "stat3_number": "100%",
+    "stat3_label": "Community focused"
   },
   "about": {
-    "h1": "About the ROLL Foundation",
+    "h1": "About The ROLL Foundation",
+    "hero_lead": "Restoring Opportunity. Lifting Lives. Leveling the Field.",
+    "cta_events": "View Our Events",
+    "cta_sponsor": "Get Sponsorship Info",
     "intro_p1": "The ROLL Foundation is dedicated to restoring opportunity, lifting lives, and leveling the field for disenfranchised and underserved communities. We believe every individual deserves another chance to thrive.",
     "intro_p2": "Founded by the Allen family, we partner with the Lily Event Center to host programs, gatherings, and resources that move people from surviving to succeeding.",
     "mission_h": "Our Mission",
@@ -34,8 +55,12 @@
     "p_level_h": "Level the Field",
     "p_level_p": "We advocate for fair access and reduce barriers so second chances become new beginnings.",
     "contact_h": "Get Involved",
-    "contact_p": "Ready to partner, volunteer, or learn more? We’d love to hear from you.",
-    "contact_email_label": "Email Us"
+    "contact_p": "Ready to partner, volunteer, or learn more? We'd love to hear from you.",
+    "contact_email_label": "Email Us",
+    "get_involved_title": "Get Involved",
+    "get_involved_lead": "Join us in making a difference in our community.",
+    "attend_events": "Attend Our Events",
+    "become_sponsor": "Become a Sponsor"
   },
   "events": {
     "h1": "Community Events",
@@ -51,6 +76,28 @@
     "cta_sponsor": "Sponsor an Event",
     "cta_contact": "Contact Us for Event Info"
   },
+  "shesroll": {
+    "title": "She's On A Roll",
+    "hero_lead": "An uplifting celebration of women, community, and empowerment — presented by the ROLL Foundation at the Lily Event Center.",
+    "countdown_title": "Event Begins In",
+    "countdown_live": "Event is Live!",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "get_tickets": "Get Your Tickets",
+    "event_details": "Event Details",
+    "sponsor_title": "Interested in Sponsoring?",
+    "sponsor_desc": "Partner with us to make this event even more impactful for our community.",
+    "download_packet": "📄 Download Sponsorship Packet",
+    "sponsors_h2": "Calling All Sponsors",
+    "sponsors_p1": "Join us in supporting \"She's On A Roll\" — a unique event designed to inspire, empower, and connect women in our community. Sponsorships directly fund mentorship programs, workshops, and local outreach through the ROLL Foundation.",
+    "sponsors_p2": "Want to learn more? Download our sponsorship packet below and reach out to our event coordinator.",
+    "cta_packet": "View Sponsorship Packet",
+    "cta_email": "Email the Event Coordinator",
+    "banner_h3": "Hosted at the Lily Event Center",
+    "banner_p": "640 Old Airport Road • Aiken, South Carolina"
+  },
   "donate": {
     "h1": "Donate",
     "lead": "Every gift helps us serve more kids, more often.",
@@ -62,26 +109,20 @@
   },
   "contact": {
     "h1": "Contact Us",
-    "lead": "We’d love to hear from you. Whether you want to volunteer, partner, or learn more — reach out today.",
+    "lead": "We'd love to hear from you. Whether you want to volunteer, partner, or learn more — reach out today.",
     "email_label": "Email",
     "phone_label": "Phone",
     "address_label": "Address",
     "submit_btn": "Send Message",
-    "success_msg": "Thank you! We’ll be in touch soon."
+    "success_msg": "Thank you! We'll be in touch soon."
   },
   "footer": {
-    "line": "© {{year}} Roll Foundation • A project of Citizen’s Park Office & Conference Center"
+    "line": "© {{year}} Roll Foundation • A project of Citizen's Park Office & Conference Center",
+    "tagline": "Restoring Opportunity. Lifting Lives. Leveling the Field.",
+    "about": "About",
+    "events": "Events",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "copyright": "The ROLL Foundation. All rights reserved."
   }
-  ,
-  "shesroll": {
-  "title": "She’s On A Roll",
-  "hero_lead": "An uplifting celebration of women, community, and empowerment — presented by the ROLL Foundation at the Lily Event Center.",
-  "sponsors_h2": "Calling All Sponsors",
-  "sponsors_p1": "Join us in supporting “She’s On A Roll” — a unique event designed to inspire, empower, and connect women in our community. Sponsorships directly fund mentorship programs, workshops, and local outreach through the ROLL Foundation.",
-  "sponsors_p2": "Want to learn more? Download our sponsorship packet below and reach out to our event coordinator.",
-  "cta_packet": "View Sponsorship Packet",
-  "cta_email": "Email the Event Coordinator",
-  "banner_h3": "Hosted at the Lily Event Center",
-  "banner_p": "640 Old Airport Road • Aiken, South Carolina"
-}
 }
