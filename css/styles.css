@@ -108,10 +108,9 @@ a:hover{text-decoration:underline}
   transition: all 0.3s ease;
 }
 
+/* Remove the emoji ::before pseudo-element */
 .nav-event::before {
-  content: '🎭';
-  margin-right: 0.5rem;
-  font-size: 0.9rem;
+  display: none;
 }
 
 .nav-event:hover {
@@ -141,9 +140,9 @@ a:hover{text-decoration:underline}
   text-decoration: none;
 }
 
+/* Remove the emoji ::before pseudo-element */
 .nav-sponsor::before {
-  content: '📄';
-  margin-right: 0.5rem;
+  display: none;
 }
 
 .nav-sponsor:hover {
@@ -172,6 +171,11 @@ a:hover{text-decoration:underline}
     box-shadow:0 12px 26px rgba(11,35,64,.12)
   }
   .site-nav a{width:100%}
+  .nav-sponsor {
+    width: 100%;
+    text-align: center;
+    margin: 0.25rem 0;
+  }
 }
 
 /* Extra small mobile devices */
