@@ -1053,6 +1053,11 @@ a:hover{text-decoration:underline}
   text-decoration: none;
 }
 
+.sponsor-cta {
+  text-align: center;
+  margin: 2rem 0;
+}
+
 /* Mobile adjustments for sponsor section */
 @media (max-width: 768px) {
   .sponsor-section {

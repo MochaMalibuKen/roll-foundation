@@ -3,125 +3,132 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>About — The ROLL Foundation</title>
-  <meta name="description" content="Learn about the ROLL Foundation’s mission, story, and pillars of impact.">
-
-  <link rel="icon" href="./assets/img/logo/rolllogo2.png" type="image/png">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="About — Roll Foundation">
-  <meta property="og:description" content="Restoring Opportunity. Lifting Lives. Leveling the Field.">
-  <meta property="og:image" content="./assets/img/events/rollevent5.jpg">
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>About Us - ROLL Foundation</title>
+  <meta name="description" content="Learn about the ROLL Foundation's mission to restore opportunity, lift lives, and level the field.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="gold-green-theme">
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- ===== Header ===== -->
   <header class="site-header">
-  <div class="container header-inner">
-    <div class="brand">
-      <img src="./assets/img/logo/rolllogo2.png" alt="Roll Foundation Logo">
-    </div>
-    <h1 class="site-title">The ROLL Foundation</h1>
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="./assets/img/logo/rolllogo2.png" alt="ROLL Foundation Logo" width="70" height="70">
+      </div>
+      <h1 class="site-title">The ROLL Foundation</h1>
 
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
-    <nav id="site-nav" class="site-nav" data-collapsible>
-      <a href="index.html" data-i18n="nav.home">Home</a>
-      <a href="about.html" data-i18n="nav.about" aria-current="page">About</a>
-      <a href="events.html" data-i18n="nav.events">Events</a>
-      <a href="donate.html" data-i18n="nav.donate">Donate</a>
-      <a href="contact.html" data-i18n="contact.h1">Contact</a>
-      <button id="langToggle" class="btn small" aria-label="Toggle language">
-        <span data-i18n="nav.lang">EN</span>
-        <span class="visually-hidden" data-i18n="nav.lang_alt">ES</span>
-      </button>
-    </nav>
-  </div>
-</header>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">☰</button>
+      <nav id="site-nav" class="site-nav" data-collapsible>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about" aria-current="page">About</a>
+        <a href="events.html" data-i18n="nav.events">Events</a>
+        <a href="shes-on-a-roll.html" data-i18n="nav.shes_on_a_roll" class="nav-event">She's On A Roll</a>
+        <a href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf" class="nav-sponsor">Sponsorship Packet</a>
+        <a href="contact.html" data-i18n="contact.h1">Contact</a>
+        <button id="langToggle" class="btn small" aria-label="Toggle language">
+          <span data-i18n="nav.lang">EN</span>
+          <span class="visually-hidden" data-i18n="nav.lang_alt">ES</span>
+        </button>
+      </nav>
+    </div>
+  </header>
 
   <main id="main">
-    <!-- Light hero (no photo) -->
-    <section class="hero" style="background:linear-gradient(180deg,#F0F7FF,#F5F9FF)">
+    <!-- ===== About Hero Section ===== -->
+    <section class="hero hard-hero goldgreen-theme" style="background-image:url('./assets/img/events/rollevent5.jpg')">
       <div class="container hero-inner">
-        <h1 data-i18n="about.h1">About the ROLL Foundation</h1>
-        <p class="lead" data-i18n="home.hero_lead">
-          The ROLL Foundation empowers underserved communities through mentorship, resources, and dignity.
+        <h1>About The ROLL Foundation</h1>
+        <p class="lead">
+          Restoring Opportunity. Lifting Lives. Leveling the Field.
         </p>
-      </div>
-    </section>
-
-    <!-- Intro -->
-    <section class="section">
-      <div class="container narrow">
-        <p data-i18n="about.intro_p1">
-          The ROLL Foundation is dedicated to restoring opportunity, lifting lives, and leveling the field for disenfranchised and underserved communities. We believe every individual deserves another chance to thrive.
-        </p>
-        <p data-i18n="about.intro_p2">
-          Founded by the Allen family, we partner with the Lily Event Center to host programs, gatherings, and resources that move people from surviving to succeeding.
-        </p>
-      </div>
-    </section>
-
-    <!-- Mission -->
-    <section class="section mission">
-      <div class="container narrow">
-        <h2 data-i18n="about.mission_h">Our Mission</h2>
-        <p data-i18n="about.mission_p1">
-          By providing access to resources, mentorship, and supportive programs, we empower people to rebuild their lives, unlock their potential, and contribute meaningfully to society.
-        </p>
-        <p data-i18n="about.mission_p2">
-          Our mission is to break down systemic barriers, restore dignity, and create pathways to lasting success for those too often overlooked.
-        </p>
-      </div>
-    </section>
-
-    <!-- Pillars -->
-    <section class="section">
-      <div class="container">
-        <h2 data-i18n="about.pillars_h">Our Pillars</h2>
-        <div class="cards">
-          <article class="card">
-            <h3 data-i18n="about.p_restore_h">Restore Opportunity</h3>
-            <p class="muted" data-i18n="about.p_restore_p">
-              We connect people with mentors, training, and tools that open real pathways to work, education, and stability.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="about.p_lift_h">Lift Lives</h3>
-            <p class="muted" data-i18n="about.p_lift_p">
-              Through events and practical support, we meet immediate needs while building long-term community.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="about.p_level_h">Level the Field</h3>
-            <p class="muted" data-i18n="about.p_level_p">
-              We advocate for fair access and reduce barriers so second chances become new beginnings.
-            </p>
-          </article>
+        <div class="cta-row">
+          <a class="btn primary gold-btn" href="events.html">View Our Events</a>
+          <a class="btn secondary green-btn" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">Get Sponsorship Info</a>
         </div>
       </div>
     </section>
 
-    <!-- Contact / Get Involved -->
-    <section class="section">
-      <div class="container">
-        <div class="card donate-card">
-          <h3 data-i18n="about.contact_h">Get Involved</h3>
-          <p class="muted" data-i18n="about.contact_p">Ready to partner, volunteer, or learn more? We’d love to hear from you.</p>
-          <a class="btn" href="mailto:info@rollfoundation.org" data-i18n="about.contact_email_label">Email Us</a>
+    <!-- ===== Mission Section ===== -->
+    <section class="section mission gold-green-section">
+      <div class="container narrow">
+        <h2>Our Mission</h2>
+        <p>
+          The ROLL Foundation is dedicated to restoring opportunity, lifting lives, and leveling the field for disenfranchised and underserved communities.
+          We believe every individual deserves another chance to thrive.
+        </p>
+        <p>
+          By providing access to resources, mentorship, and supportive programs, we empower people to rebuild their lives, unlock their potential,
+          and contribute meaningfully to society. Our mission is to break down systemic barriers, restore dignity,
+          and create pathways to lasting success for those too often overlooked.
+        </p>
+        <blockquote class="tagline">"Restoring Opportunity. Lifting Lives. Leveling the Field."</blockquote>
+      </div>
+    </section>
+
+    <!-- ===== Values Section ===== -->
+    <section class="section green-accent-section">
+      <div class="container cards">
+        <article class="card gold-card">
+          <h3>Restore Opportunity</h3>
+          <p class="muted">Access to mentorship, tools, and resources that open doors — no matter your starting point.</p>
+        </article>
+        <article class="card gold-card">
+          <h3>Lift Lives</h3>
+          <p class="muted">Programs and events that provide practical support and build stronger communities.</p>
+        </article>
+        <article class="card gold-card">
+          <h3>Level the Field</h3>
+          <p class="muted">Breaking down barriers so people can rebuild with dignity and a fair shot at success.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Get Involved CTA ===== -->
+    <section class="section gold-accent-section">
+      <div class="container narrow">
+        <h2>Get Involved</h2>
+        <p class="lead">Join us in making a difference in our community.</p>
+        <div class="cta-row">
+          <a class="btn primary gold-btn" href="events.html">Attend Our Events</a>
+          <a class="btn secondary green-btn" href="./assets/img/events/shes-on-a-roll-sponsorship-packet.pdf" download="ROLL-Foundation-Sponsorship-Packet.pdf">Become a Sponsor</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer gold-green-footer">
     <div class="container footer-inner">
-      <p id="footerLine" data-i18n="footer.line">© <span id="year"></span> The ROLL Foundation </p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="./assets/img/logo/rolllogo2.png" alt="ROLL Foundation Logo" width="50" height="50">
+          <p class="footer-tagline">Restoring Opportunity. Lifting Lives. Leveling the Field.</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="shes-on-a-roll.html">She's On A Roll</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p id="footerLine">© <span id="year"></span> The ROLL Foundation. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
-  <script defer src="./js/script.js"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
