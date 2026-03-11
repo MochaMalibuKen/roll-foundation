@@ -375,7 +375,7 @@ a:hover{text-decoration:underline}
 
 /* Event Poster Styling */
 .event-poster {
-  max-width: 400px;
+  max-width: 360px;
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
@@ -390,9 +390,11 @@ a:hover{text-decoration:underline}
 }
 
 .poster-image {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 /* Event Details */
