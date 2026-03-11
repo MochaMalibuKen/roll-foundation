@@ -14,7 +14,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Roll Foundation">
   <meta property="og:description" content="Restoring Opportunity. Lifting Lives. Leveling the Field.">
-  <meta property="og:image" content="./assets/img/events/rollflyer.PNG">
+  <meta property="og:image" content="./assets/img/events/rollevent5.jpg">
 
   <!-- Fonts & CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +52,7 @@
 
   <main id="main">
     <!-- ===== Hero Section ===== -->
-    <section class="hero hard-hero goldgreen-theme" style="background-image:url('./assets/img/events/rollflyer.PNG')">
+    <section class="hero hard-hero goldgreen-theme" style="background-image:url('./assets/img/events/rollevent5.jpg')">
       <div class="container hero-inner">
         <h2 class="visually-hidden">Welcome</h2>
         <h1 data-i18n="home.hero_h1">Restoring Opportunity. Lifting Lives. Leveling the Field.</h1>
@@ -120,6 +120,43 @@
       </div>
     </section>
 
+    <!-- ===== Event Photo Carousel ===== -->
+    <section class="section green-accent-section">
+      <div class="container narrow">
+        <h2>Community Event Photos</h2>
+        <div class="home-carousel" data-carousel>
+          <button class="carousel-btn prev" type="button" aria-label="Previous photo" data-carousel-prev>‹</button>
+          <div class="carousel-viewport">
+            <div class="carousel-track" data-carousel-track>
+              <div class="carousel-slide is-active">
+                <img src="./assets/img/events/rollevent1.png" alt="ROLL Foundation community event photo 1" loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/img/events/rollevent2.jpg" alt="ROLL Foundation community event photo 2" loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/img/events/rollevent3.jpg" alt="ROLL Foundation community event photo 3" loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/img/events/rollevent4.jpg" alt="ROLL Foundation community event photo 4" loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/img/events/rollevent6.jpg" alt="ROLL Foundation community event photo 5" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Next photo" data-carousel-next>›</button>
+          <div class="carousel-dots" data-carousel-dots>
+            <button class="is-active" type="button" aria-label="Go to photo 1"></button>
+            <button type="button" aria-label="Go to photo 2"></button>
+            <button type="button" aria-label="Go to photo 3"></button>
+            <button type="button" aria-label="Go to photo 4"></button>
+            <button type="button" aria-label="Go to photo 5"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== Impact Stats ===== -->
     <section class="band gold-green-band">
       <div class="container stats">
@@ -159,5 +196,6 @@
       </div>
     </div>
   </footer>
+  <script defer src="./js/home-carousel.js"></script>
 </body>
 </html>
