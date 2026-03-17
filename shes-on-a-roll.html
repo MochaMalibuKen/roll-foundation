@@ -13,7 +13,7 @@
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="She's On A Roll - ROLL Foundation Event">
-  <meta property="og:description" content="March 27th, 2026 • 11:00 AM • The Rye Patch">
+  <meta property="og:description" content="March 27th, 2026 • 11:00 AM • The HUB Innovation Center, Augusta, GA">
   <meta property="og:image" content="./assets/img/events/rollflyer.PNG">
 
   <!-- Fonts & CSS -->
@@ -105,15 +105,15 @@
               <span>11:00 AM</span>
             </div>
             <div class="event-venue">
-              <strong>The Rye Patch</strong>
-              <span>Aiken, SC</span>
+              <strong>The HUB Innovation Center</strong>
+              <span>Augusta, GA</span>
             </div>
           </div>
         </div>
 
         <!-- Call to Action Buttons -->
         <div class="event-cta">
-          <a class="btn primary royal-btn btn-large" href="#tickets">
+          <a class="btn primary royal-btn btn-large" href="https://www.eventbrite.com/e/2026-shes-on-a-roll-conference-tickets-1985392538528?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl" target="_blank" rel="noopener">
             <span data-i18n="shesroll.get_tickets">Get Your Tickets</span>
           </a>
           <a class="btn secondary royal-btn btn-large" href="#details">
@@ -128,6 +128,51 @@
           <a class="btn sponsor-btn" href="./assets/img/events/2026%20Roll%20Foundation%20Business%20Advertisements.pdf" download="ROLL-Foundation-Sponsorship-Opportunities-2026.pdf">
             <span>📄 Download Sponsorship Opportunities</span>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== She's On A Roll Photo Carousel ===== -->
+    <section id="details" class="section green-accent-section">
+      <div class="container narrow">
+        <h2>She’s On A Roll Moments</h2>
+        <div class="home-carousel" data-carousel>
+          <button class="carousel-btn prev" type="button" aria-label="Previous photo" data-carousel-prev>‹</button>
+          <div class="carousel-viewport">
+            <div class="carousel-track" data-carousel-track>
+              <div class="carousel-slide is-active">
+                <img src="./assets/img/events/shes-roll-gallery1.png" alt="She's On A Roll gallery photo 1" loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/img/events/shes-roll-gallery2.png" alt="She's On A Roll gallery photo 2" loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/img/events/shes-roll-gallery3.png" alt="She's On A Roll gallery photo 3" loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/img/events/shes-roll-gallery4.png" alt="She's On A Roll gallery photo 4" loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/img/events/shes-roll-gallery5.png" alt="She's On A Roll gallery photo 5" loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/img/events/shes-roll-gallery6.png" alt="She's On A Roll gallery photo 6" loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assets/img/events/shes-roll-gallery7.png" alt="She's On A Roll gallery photo 7" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Next photo" data-carousel-next>›</button>
+          <div class="carousel-dots" data-carousel-dots>
+            <button class="is-active" type="button" aria-label="Go to photo 1"></button>
+            <button type="button" aria-label="Go to photo 2"></button>
+            <button type="button" aria-label="Go to photo 3"></button>
+            <button type="button" aria-label="Go to photo 4"></button>
+            <button type="button" aria-label="Go to photo 5"></button>
+            <button type="button" aria-label="Go to photo 6"></button>
+            <button type="button" aria-label="Go to photo 7"></button>
+          </div>
         </div>
       </div>
     </section>
@@ -152,6 +197,7 @@
       </div>
     </div>
   </footer>
+  <script defer src="./js/home-carousel.js"></script>
 
   <!-- Updated JavaScript for countdown with proper i18n -->
   <script>
@@ -159,7 +205,7 @@
     const EVENT_CONFIG = {
       date: new Date('2026-03-27T11:00:00-04:00'),
       name: "She's On A Roll",
-      venue: "The Rye Patch"
+      venue: "The HUB Innovation Center in Augusta, GA"
     };
     
     function updateCountdown() {
