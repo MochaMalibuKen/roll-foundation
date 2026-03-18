@@ -38,7 +38,6 @@
       <nav id="site-nav" class="site-nav" data-collapsible>
         <a href="index.html" data-i18n="nav.home">Home</a>
         <a href="about.html" data-i18n="nav.about">About</a>
-        <a href="events.html" data-i18n="nav.events">Events</a>
         <a href="shes-on-a-roll.html" data-i18n="nav.shes_on_a_roll" class="nav-event" aria-current="page">She's On A Roll</a>
         <a href="./assets/img/events/2026%20Roll%20Foundation%20Business%20Advertisements.pdf" download="ROLL-Foundation-Sponsorship-Opportunities-2026.pdf" class="nav-sponsor">Sponsorship Opportunities</a>
         <a href="contact.html" data-i18n="contact.h1">Contact</a>
@@ -91,13 +90,50 @@
           </div>
         </div>
 
-        <!-- Event Logo/Poster (Below Countdown) -->
-        <div class="event-poster">
-          <img src="./assets/img/events/rollflyer.PNG" alt="She's On A Roll Event Poster" class="poster-image">
+        <!-- Event Gallery (Below Countdown) -->
+        <div class="event-poster hero-gallery">
+          <div class="home-carousel" data-carousel>
+            <button class="carousel-btn prev" type="button" aria-label="Previous photo" data-carousel-prev>‹</button>
+            <div class="carousel-viewport">
+              <div class="carousel-track" data-carousel-track>
+                <div class="carousel-slide is-active">
+                  <img src="./assets/img/events/shes-roll-gallery1.png" alt="She's On A Roll gallery photo 1" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                  <img src="./assets/img/events/shes-roll-gallery2.png" alt="She's On A Roll gallery photo 2" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                  <img src="./assets/img/events/shes-roll-gallery3.png" alt="She's On A Roll gallery photo 3" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                  <img src="./assets/img/events/shes-roll-gallery4.png" alt="She's On A Roll gallery photo 4" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                  <img src="./assets/img/events/shes-roll-gallery5.png" alt="She's On A Roll gallery photo 5" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                  <img src="./assets/img/events/shes-roll-gallery6.png" alt="She's On A Roll gallery photo 6" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                  <img src="./assets/img/events/shes-roll-gallery7.png" alt="She's On A Roll gallery photo 7" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn next" type="button" aria-label="Next photo" data-carousel-next>›</button>
+            <div class="carousel-dots" data-carousel-dots>
+              <button class="is-active" type="button" aria-label="Go to photo 1"></button>
+              <button type="button" aria-label="Go to photo 2"></button>
+              <button type="button" aria-label="Go to photo 3"></button>
+              <button type="button" aria-label="Go to photo 4"></button>
+              <button type="button" aria-label="Go to photo 5"></button>
+              <button type="button" aria-label="Go to photo 6"></button>
+              <button type="button" aria-label="Go to photo 7"></button>
+            </div>
+          </div>
         </div>
 
         <!-- Event Details -->
-        <div class="event-details">
+        <div id="details" class="event-details">
           <h1 class="event-title">She's On A Roll</h1>
           <div class="event-info">
             <div class="event-date-time">
@@ -132,50 +168,6 @@
       </div>
     </section>
 
-    <!-- ===== She's On A Roll Photo Carousel ===== -->
-    <section id="details" class="section green-accent-section">
-      <div class="container narrow">
-        <h2>She’s On A Roll Moments</h2>
-        <div class="home-carousel" data-carousel>
-          <button class="carousel-btn prev" type="button" aria-label="Previous photo" data-carousel-prev>‹</button>
-          <div class="carousel-viewport">
-            <div class="carousel-track" data-carousel-track>
-              <div class="carousel-slide is-active">
-                <img src="./assets/img/events/shes-roll-gallery1.png" alt="She's On A Roll gallery photo 1" loading="lazy">
-              </div>
-              <div class="carousel-slide">
-                <img src="./assets/img/events/shes-roll-gallery2.png" alt="She's On A Roll gallery photo 2" loading="lazy">
-              </div>
-              <div class="carousel-slide">
-                <img src="./assets/img/events/shes-roll-gallery3.png" alt="She's On A Roll gallery photo 3" loading="lazy">
-              </div>
-              <div class="carousel-slide">
-                <img src="./assets/img/events/shes-roll-gallery4.png" alt="She's On A Roll gallery photo 4" loading="lazy">
-              </div>
-              <div class="carousel-slide">
-                <img src="./assets/img/events/shes-roll-gallery5.png" alt="She's On A Roll gallery photo 5" loading="lazy">
-              </div>
-              <div class="carousel-slide">
-                <img src="./assets/img/events/shes-roll-gallery6.png" alt="She's On A Roll gallery photo 6" loading="lazy">
-              </div>
-              <div class="carousel-slide">
-                <img src="./assets/img/events/shes-roll-gallery7.png" alt="She's On A Roll gallery photo 7" loading="lazy">
-              </div>
-            </div>
-          </div>
-          <button class="carousel-btn next" type="button" aria-label="Next photo" data-carousel-next>›</button>
-          <div class="carousel-dots" data-carousel-dots>
-            <button class="is-active" type="button" aria-label="Go to photo 1"></button>
-            <button type="button" aria-label="Go to photo 2"></button>
-            <button type="button" aria-label="Go to photo 3"></button>
-            <button type="button" aria-label="Go to photo 4"></button>
-            <button type="button" aria-label="Go to photo 5"></button>
-            <button type="button" aria-label="Go to photo 6"></button>
-            <button type="button" aria-label="Go to photo 7"></button>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer gold-green-footer">
@@ -187,7 +179,6 @@
         </div>
         <div class="footer-links">
           <a href="about.html">About</a>
-          <a href="events.html">Events</a>
           <a href="contact.html">Contact</a>
           <a href="privacy.html">Privacy</a>
         </div>

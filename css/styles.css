@@ -438,6 +438,23 @@ a:hover{text-decoration:underline}
   display: block;
 }
 
+.hero-gallery{
+  padding: 0;
+}
+.hero-gallery .home-carousel{
+  margin-top:0;
+  width:100%;
+}
+.hero-gallery .carousel-viewport{
+  background:rgba(7,22,40,.55);
+  border-color:rgba(255,255,255,.35);
+}
+.hero-gallery .carousel-slide img{
+  aspect-ratio:3/4;
+  object-fit:contain;
+  background:rgba(7,22,40,.35);
+}
+
 /* Event Details */
 .event-details {
   text-align: center;
