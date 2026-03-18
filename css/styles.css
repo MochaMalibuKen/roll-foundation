@@ -448,18 +448,16 @@ a:hover{text-decoration:underline}
 .hero-gallery .carousel-viewport{
   background:rgba(7,22,40,.55);
   border-color:rgba(255,255,255,.35);
-  min-height:clamp(680px, 82vh, 1100px);
 }
 .hero-gallery .carousel-slide{
   display:flex;
   align-items:center;
   justify-content:center;
-  min-height:clamp(680px, 82vh, 1100px);
 }
 .hero-gallery .carousel-slide img{
-  width:auto;
+  width:100%;
   max-width:100%;
-  max-height:clamp(640px, 80vh, 1040px);
+  max-height:none;
   aspect-ratio:auto;
   object-fit:contain;
   background:rgba(7,22,40,.35);
@@ -1390,12 +1388,5 @@ a:hover{text-decoration:underline}
   .carousel-dots{
     margin-top:1.15rem;
     margin-bottom:1.75rem;
-  }
-  .hero-gallery .carousel-viewport,
-  .hero-gallery .carousel-slide{
-    min-height:68vh;
-  }
-  .hero-gallery .carousel-slide img{
-    max-height:66vh;
   }
 }
