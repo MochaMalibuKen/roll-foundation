@@ -960,6 +960,16 @@ a:hover{text-decoration:underline}
   flex-wrap: wrap;
 }
 
+.countdown-ticket {
+  margin-top: 1.1rem;
+  text-align: center;
+}
+
+.countdown-ticket .btn {
+  min-height: 46px;
+  padding: 0.8rem 1.45rem;
+}
+
 .countdown-unit {
   background: linear-gradient(145deg, #FFD700, #FFA000);
   border-radius: 16px;
