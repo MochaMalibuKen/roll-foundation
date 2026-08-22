@@ -49,53 +49,11 @@
   </header>
 
   <main id="main">
-    <!-- ===== Event Hero Section with Countdown ===== -->
+    <!-- ===== Event Hero Section ===== -->
     <section class="hero event-hero goldgreen-theme" style="--poster: url('./assets/img/events/rollflyer.PNG')">
       <div class="container">
         
-        <!-- Royal Countdown Timer (Above Logo) -->
-        <div class="royal-countdown">
-          <div class="countdown-crown">
-            <svg width="60" height="48" viewBox="0 0 60 48" fill="none">
-              <path d="M6 36h48l-6-24-12 12-6-12-6 12-12-12L6 36z" fill="currentColor"/>
-              <circle cx="12" cy="12" r="3" fill="currentColor"/>
-              <circle cx="30" cy="6" r="4" fill="currentColor"/>
-              <circle cx="48" cy="12" r="3" fill="currentColor"/>
-            </svg>
-          </div>
-          
-          <div class="countdown-title" data-i18n="shesroll.countdown_title">Event Begins In</div>
-          
-          <div class="countdown-display" id="countdown">
-            <div class="countdown-unit">
-              <div class="countdown-number" id="days">000</div>
-              <div class="countdown-label" data-i18n="shesroll.days">Days</div>
-            </div>
-            <div class="countdown-separator">:</div>
-            <div class="countdown-unit">
-              <div class="countdown-number" id="hours">00</div>
-              <div class="countdown-label" data-i18n="shesroll.hours">Hours</div>
-            </div>
-            <div class="countdown-separator">:</div>
-            <div class="countdown-unit">
-              <div class="countdown-number" id="minutes">00</div>
-              <div class="countdown-label" data-i18n="shesroll.minutes">Minutes</div>
-            </div>
-            <div class="countdown-separator">:</div>
-            <div class="countdown-unit">
-              <div class="countdown-number" id="seconds">00</div>
-              <div class="countdown-label" data-i18n="shesroll.seconds">Seconds</div>
-            </div>
-          </div>
-
-          <div class="countdown-ticket">
-            <a class="btn royal-btn" href="https://www.eventbrite.com/e/2026-shes-on-a-roll-conference-tickets-1985392538528?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl" target="_blank" rel="noopener">
-              <span data-i18n="shesroll.get_tickets">Get Your Tickets</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Event Gallery (Below Countdown) -->
+        <!-- Event Gallery -->
         <div class="event-poster hero-gallery">
           <div class="home-carousel" data-carousel>
             <button class="carousel-btn prev" type="button" aria-label="Previous photo" data-carousel-prev>‹</button>
@@ -192,50 +150,9 @@
   </footer>
   <script defer src="./js/home-carousel.js"></script>
 
-  <!-- Updated JavaScript for countdown with proper i18n -->
   <script>
-    // Event configuration
-    const EVENT_CONFIG = {
-      date: new Date('2026-03-27T11:00:00-04:00'),
-      name: "She's On A Roll",
-      venue: "The HUB Innovation Center in Augusta, GA"
-    };
-    
-    function updateCountdown() {
-      const now = new Date().getTime();
-      const eventTime = EVENT_CONFIG.date.getTime();
-      const timeLeft = eventTime - now;
-      
-      if (timeLeft > 0) {
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-        
-        document.getElementById('days').textContent = days.toString().padStart(3, '0');
-        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-      } else {
-        // Event has started - use i18n for "Event is Live!"
-        document.getElementById('days').textContent = '000';
-        document.getElementById('hours').textContent = '00';
-        document.getElementById('minutes').textContent = '00';
-        document.getElementById('seconds').textContent = '00';
-        
-        // Update with translated text when available
-        if (window.i18n) {
-          window.i18n.updateCountdownText();
-        }
-      }
-    }
-    
     // Set current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
-    
-    // Update countdown every second
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>

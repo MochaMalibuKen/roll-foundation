@@ -408,6 +408,206 @@ a:hover{text-decoration:underline}
   background-repeat: no-repeat;
 }
 
+/* Pastor's Appreciation feature on the home page */
+.pastor-appreciation {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(241, 105, 0, 0.22), transparent 30%),
+    linear-gradient(145deg, #142d52, #315489);
+  color: #fff;
+}
+
+.pastor-event-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) minmax(360px, 1.2fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.pastor-event-flyer {
+  width: min(100%, 480px);
+  justify-self: center;
+  margin: 0;
+  text-align: center;
+}
+
+.pastor-event-flyer > a {
+  display: block;
+  border: 5px solid rgba(255,255,255,.94);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 24px 55px rgba(0,0,0,.28);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.pastor-event-flyer > a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 65px rgba(0,0,0,.36);
+}
+
+.pastor-event-flyer img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pastor-event-flyer figcaption {
+  margin-top: .9rem;
+}
+
+.pastor-event-flyer figcaption a {
+  color: #fff;
+  font-weight: 700;
+  text-underline-offset: .22em;
+}
+
+.section-eyebrow {
+  margin: 0 0 .75rem;
+  color: #ff8a20;
+  font-size: .82rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.pastor-event-content h2 {
+  margin: 0 0 .75rem;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.25rem, 5vw, 4rem);
+}
+
+.pastor-event-intro {
+  max-width: 620px;
+  margin: 0 0 1.5rem;
+  color: rgba(255,255,255,.9);
+  font-size: 1.15rem;
+}
+
+.event-countdown {
+  margin: 1.75rem 0;
+  padding: 1.5rem;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,138,32,.65);
+  border-radius: 18px;
+  box-shadow: 0 18px 38px rgba(0,0,0,.18);
+}
+
+.event-countdown .countdown-title {
+  margin-bottom: 1.25rem;
+  color: #ff9b3f;
+}
+
+.event-countdown .countdown-display {
+  margin-bottom: 0;
+  flex-wrap: nowrap;
+}
+
+.event-countdown .countdown-unit {
+  min-width: 82px;
+  padding: 1rem .75rem;
+  background: linear-gradient(145deg, #ff9b3f, #ed6800);
+}
+
+.pastor-event-details {
+  display: grid;
+  gap: .8rem;
+  color: rgba(255,255,255,.9);
+}
+
+.pastor-event-details p { margin: 0; }
+.pastor-event-details strong { color: #ff9b3f; }
+.pastor-event-details .registration-note { margin-top: .35rem; }
+
+.pastor-registration {
+  margin-top: 1.75rem;
+}
+
+.pastor-registration h3 {
+  margin: 0 0 1rem;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.45rem;
+}
+
+.pastor-payment-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.pastor-payment-btn {
+  display: flex;
+  min-height: 104px;
+  padding: 1.1rem 1.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  border: 2px solid rgba(255,255,255,.82);
+  border-radius: 14px;
+  background: linear-gradient(145deg, #f47700, #d95c00);
+  box-shadow: 0 10px 24px rgba(0,0,0,.22);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.pastor-payment-btn.table {
+  color: #203e6e;
+  background: linear-gradient(145deg, #fff, #e9f0fa);
+}
+
+.pastor-payment-btn:hover {
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0,0,0,.3);
+}
+
+.pastor-payment-btn.table:hover {
+  color: #203e6e;
+  background: #fff;
+}
+
+.pastor-payment-btn .payment-option {
+  margin-bottom: .35rem;
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  opacity: .9;
+}
+
+.pastor-payment-btn strong {
+  color: inherit;
+  font-size: 1.12rem;
+  line-height: 1.25;
+}
+
+.payment-note {
+  margin: .8rem 0 0;
+  color: rgba(255,255,255,.78);
+  font-size: .82rem;
+}
+
+@media (max-width: 820px) {
+  .pastor-event-layout { grid-template-columns: 1fr; }
+  .pastor-event-content { text-align: center; }
+  .pastor-event-intro { margin-inline: auto; }
+}
+
+@media (max-width: 560px) {
+  .event-countdown .countdown-display {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .event-countdown .countdown-separator { display: none; }
+  .event-countdown .countdown-unit { min-width: 0; }
+  .pastor-payment-actions { grid-template-columns: 1fr; }
+  .pastor-payment-btn { align-items: center; text-align: center; }
+}
+
 .event-hero .container {
   max-width: 1100px;
   display: flex;
