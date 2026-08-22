@@ -584,6 +584,14 @@ a:hover{text-decoration:underline}
   line-height: 1.25;
 }
 
+.pastor-payment-btn .payment-price {
+  margin-top: .45rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.65rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
 .payment-note {
   margin: .8rem 0 0;
   color: rgba(255,255,255,.78);
