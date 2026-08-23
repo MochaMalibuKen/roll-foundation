@@ -37,7 +37,7 @@
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">☰</button>
       <nav id="site-nav" class="site-nav" data-collapsible>
         <a href="index.html" data-i18n="nav.home" aria-current="page">Home</a>
-        <a href="shes-on-a-roll.html" data-i18n="nav.shes_on_a_roll" class="nav-event">She's On A Roll</a>
+        <a href="shes-on-a-roll.html" data-i18n="nav.shes_on_a_roll" class="nav-event" hidden>She's On A Roll</a>
         <a href="./assets/img/events/2026%20Roll%20Foundation%20Business%20Advertisements.pdf" download="ROLL-Foundation-Sponsorship-Opportunities-2026.pdf" class="nav-sponsor">Sponsorship Opportunities</a>
         <a href="contact.html" data-i18n="contact.h1">Contact</a>
         <button id="langToggle" class="btn small" aria-label="Toggle language">
@@ -58,7 +58,7 @@
           The ROLL Foundation empowers underserved communities through mentorship, resources, and dignity — creating pathways to lasting success.
         </p>
         <div class="cta-row">
-          <a class="btn primary gold-btn" href="shes-on-a-roll.html">View She's On A Roll</a>
+          <a class="btn primary gold-btn" href="shes-on-a-roll.html" hidden>View She's On A Roll</a>
           <a class="btn secondary green-btn" data-i18n="home.cta_about" href="about.html">Learn More About Us</a>
         </div>
         
@@ -175,7 +175,7 @@
     </section>
 
     <!-- ===== Event Photo Carousel ===== -->
-    <section class="section green-accent-section">
+    <section class="section green-accent-section" hidden>
       <div class="container narrow">
         <h2>Community Event Photos</h2>
         <div class="home-carousel" data-carousel>
@@ -239,7 +239,7 @@
         </div>
         <div class="footer-links">
           <a href="about.html" data-i18n="footer.about">About</a>
-          <a href="shes-on-a-roll.html">She's On A Roll</a>
+          <a href="shes-on-a-roll.html" hidden>She's On A Roll</a>
           <a href="contact.html" data-i18n="footer.contact">Contact</a>
           <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
         </div>
@@ -249,7 +249,6 @@
       </div>
     </div>
   </footer>
-  <script defer src="./js/home-carousel.js"></script>
   <script defer src="./js/event-countdown.js"></script>
 </body>
 </html>
